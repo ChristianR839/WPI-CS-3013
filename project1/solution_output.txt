@@ -1,0 +1,1786 @@
+Script started on 2023-01-24 19:26:00-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="100" LINES="52"]
+]0;cs3013@cs3013vm: ~/project_1cs3013@cs3013vm:~/project_1$ make
+gcc prolific.c -o prolific
+[Kprolific.c:[K In function ‘[Kmain[K’:
+[Kprolific.c:13:22:[K [Kwarning: [Kimplicit declaration of function ‘[Kgetcwd[K’; did you mean ‘[Kgetw[K’? [[K-Wimplicit-function-declaration[K]
+   13 |     seedFile = fopen([Kgetcwd[K() + "seed.txt", "r");
+      |                      [K^~~~~~[K
+      |                      [Kgetw[K
+[Kprolific.c:36:20:[K [Kwarning: [Kimplicit declaration of function ‘[Kfork[K’ [[K-Wimplicit-function-declaration[K]
+   36 |         childPID = [Kfork[K();
+      |                    [K^~~~[K
+[Kprolific.c:42:110:[K [Kwarning: [Kimplicit declaration of function ‘[Kgetpid[K’ [[K-Wimplicit-function-declaration[K]
+   42 | , PID: %d]: I am the child and I will wait %d seconds and exit with code %d.\n", [Kgetpid[K(), childWaitTime, childExitCode);
+      |                                                                                  [K^~~~~~[K
+
+[Kprolific.c:43:13:[K [Kwarning: [Kimplicit declaration of function ‘[Ksleep[K’ [[K-Wimplicit-function-declaration[K]
+   43 |             [Ksleep[K(childWaitTime);
+      |             [K^~~~~[K
+[Kprolific.c:48:13:[K [Kwarning: [Kimplicit declaration of function ‘[Kwaitpid[K’ [[K-Wimplicit-function-declaration[K]
+   48 |             [Kwaitpid[K(childPID, &childExitCode, 0);
+      |             [K^~~~~~~[K
+gcc generation.c -o generation
+[Kgeneration.c:[K In function ‘[Kmain[K’:
+[Kgeneration.c:12:22:[K [Kwarning: [Kimplicit declaration of function ‘[Kgetcwd[K’; did you mean ‘[Kgetw[K’? [[K-Wimplicit-function-declaration[K]
+   12 |     seedFile = fopen([Kgetcwd[K() + "seed.txt", "r");
+      |                      [K^~~~~~[K
+      |                      [Kgetw[K
+[Kgeneration.c:29:20:[K [Kwarning: [Kimplicit declaration of function ‘[Kfork[K’ [[K-Wimplicit-function-declaration[K]
+   29 |         childPID = [Kfork[K();
+      |                    [K^~~~[K
+[Kgeneration.c:32:114:[K [Kwarning: [Kimplicit declaration of function ‘[Kgetpid[K’ [[K-Wimplicit-function-declaration[K]
+   32 | D: %d]: I was called with descendant count = %d. I'll have %d descendant(s).\n", [Kgetpid[K(), lifespanCount, lifespanCount-1);
+      |                                                                                  [K^~~~~~[K
+
+[Kgeneration.c:35:13:[K [Kwarning: [Kimplicit declaration of function ‘[Kwaitpid[K’ [[K-Wimplicit-function-declaration[K]
+   35 |             [Kwaitpid[K(childPID, &childExitCode, 0);
+      |             [K^~~~~~~[K
+gcc explorer.c -o explorer
+[Kexplorer.c:[K In function ‘[Kmain[K’:
+[Kexplorer.c:12:22:[K [Kwarning: [Kimplicit declaration of function ‘[Kgetcwd[K’; did you mean ‘[Kgetw[K’? [[K-Wimplicit-function-declaration[K]
+   12 |     seedFile = fopen([Kgetcwd[K() + "seed.txt", "r");
+      |                      [K^~~~~~[K
+      |                      [Kgetw[K
+[Kexplorer.c:36:42:[K [Kwarning: [Kimplicit declaration of function ‘[Kchdir[K’ [[K-Wimplicit-function-declaration[K]
+   36 |                 changeDirectorySuccess = [Kchdir[K("/home");
+      |                                          [K^~~~~[K
+[Kexplorer.c:64:20:[K [Kwarning: [Kimplicit declaration of function ‘[Kfork[K’ [[K-Wimplicit-function-declaration[K]
+   64 |         childPID = [Kfork[K();
+      |                    [K^~~~[K
+[Kexplorer.c:67:75:[K [Kwarning: [Kimplicit declaration of function ‘[Kgetpid[K’ [[K-Wimplicit-function-declaration[K]
+   67 |             printf("\t[Child, PID: %d]: Executing 'ls -tr' command...\n", [Kgetpid[K());
+      |                                                                           [K^~~~~~[K
+[Kexplorer.c:75:13:[K [Kwarning: [Kimplicit declaration of function ‘[Kexecvp[K’ [[K-Wimplicit-function-declaration[K]
+   75 |             [Kexecvp[K(cmd, args);
+      |             [K^~~~~~[K
+[Kexplorer.c:80:13:[K [Kwarning: [Kimplicit declaration of function ‘[Kwaitpid[K’ [[K-Wimplicit-function-declaration[K]
+   80 |             [Kwaitpid[K(childPID, &childExitCode, 0);
+      |             [K^~~~~~~[K
+gcc slug.c -o slug
+[Kslug.c:[K In function ‘[Kmain[K’:
+[Kslug.c:27:52:[K [Kwarning: [Kimplicit declaration of function ‘[Kgetpid[K’ [[K-Wimplicit-function-declaration[K]
+   27 |     printf("[Slug PID: %d] Read seed value: %d\n", [Kgetpid[K(), seedValue);
+      |                                                    [K^~~~~~[K
+[Kslug.c:35:5:[K [Kwarning: [Kimplicit declaration of function ‘[Ksleep[K’ [[K-Wimplicit-function-declaration[K]
+   35 |     [Ksleep[K(slugSeconds);
+      |     [K^~~~~[K
+[Kslug.c:62:5:[K [Kwarning: [Kimplicit declaration of function ‘[Kexecvp[K’ [[K-Wimplicit-function-declaration[K]
+   62 |     [Kexecvp[K(cmd, args);
+      |     [K^~~~~~[K
+gcc slugrace.c -o slugrace
+[Kslugrace.c:[K In function ‘[Kmain[K’:
+[Kslugrace.c:14:22:[K [Kwarning: [Kimplicit declaration of function ‘[Kgetcwd[K’; did you mean ‘[Kgetw[K’? [[K-Wimplicit-function-declaration[K]
+   14 |     seedFile = fopen([Kgetcwd[K() + "seed.txt", "r");
+      |                      [K^~~~~~[K
+      |                      [Kgetw[K
+[Kslugrace.c:36:23:[K [Kwarning: [Kimplicit declaration of function ‘[Kfork[K’ [[K-Wimplicit-function-declaration[K]
+   36 |         childPID[i] = [Kfork[K();
+      |                       [K^~~~[K
+[Kslugrace.c:43:78:[K [Kwarning: [Kimplicit declaration of function ‘[Kgetpid[K’ [[K-Wimplicit-function-declaration[K]
+   43 |             printf("\t[Child, PID: %d]: Executing './slug %d' command...\n", [Kgetpid[K(), i+1);
+      |                                                                              [K^~~~~~[K
+[Kslugrace.c:45:13:[K [Kwarning: [Kimplicit declaration of function ‘[Kexecvp[K’ [[K-Wimplicit-function-declaration[K]
+   45 |             [Kexecvp[K(args[0], args);
+      |             [K^~~~~~[K
+[Kslugrace.c:69:27:[K [Kwarning: [Kimplicit declaration of function ‘[Kwaitpid[K’ [[K-Wimplicit-function-declaration[K]
+   69 |                 tempPID = [Kwaitpid[K(childPID[i], &childExitCode, WNOHANG);
+      |                           [K^~~~~~~[K
+[Kslugrace.c:88:9:[K [Kwarning: [Kimplicit declaration of function ‘[Kusleep[K’ [[K-Wimplicit-function-declaration[K]
+   88 |         [Kusleep[K(330000);
+      |         [K^~~~~~[K
+]0;cs3013@cs3013vm: ~/project_1cs3013@cs3013vm:~/project_1$ ./prolific
+Read seed value: 12345
+Random child count: 11
+[Parent]: I am waiting for PID 2563 to finish.
+	[Child, PID: 2563]: I am the child and I will wait 3 seconds and exit with code 22.
+	[Child, PID: 2563]: Now exiting...
+[Parent]: Child 2563 finished with status code 22. Onward!
+[Parent]: I am waiting for PID 2564 to finish.
+	[Child, PID: 2564]: I am the child and I will wait 3 seconds and exit with code 24.
+	[Child, PID: 2564]: Now exiting...
+[Parent]: Child 2564 finished with status code 24. Onward!
+[Parent]: I am waiting for PID 2574 to finish.
+	[Child, PID: 2574]: I am the child and I will wait 2 seconds and exit with code 2.
+	[Child, PID: 2574]: Now exiting...
+[Parent]: Child 2574 finished with status code 2. Onward!
+[Parent]: I am waiting for PID 2575 to finish.
+	[Child, PID: 2575]: I am the child and I will wait 1 seconds and exit with code 22.
+	[Child, PID: 2575]: Now exiting...
+[Parent]: Child 2575 finished with status code 22. Onward!
+[Parent]: I am waiting for PID 2576 to finish.
+	[Child, PID: 2576]: I am the child and I will wait 1 seconds and exit with code 5.
+	[Child, PID: 2576]: Now exiting...
+[Parent]: Child 2576 finished with status code 5. Onward!
+[Parent]: I am waiting for PID 2577 to finish.
+	[Child, PID: 2577]: I am the child and I will wait 3 seconds and exit with code 38.
+	[Child, PID: 2577]: Now exiting...
+[Parent]: Child 2577 finished with status code 38. Onward!
+[Parent]: I am waiting for PID 2578 to finish.
+	[Child, PID: 2578]: I am the child and I will wait 2 seconds and exit with code 3.
+	[Child, PID: 2578]: Now exiting...
+[Parent]: Child 2578 finished with status code 3. Onward!
+[Parent]: I am waiting for PID 2579 to finish.
+	[Child, PID: 2579]: I am the child and I will wait 2 seconds and exit with code 29.
+	[Child, PID: 2579]: Now exiting...
+[Parent]: Child 2579 finished with status code 29. Onward!
+[Parent]: I am waiting for PID 2582 to finish.
+	[Child, PID: 2582]: I am the child and I will wait 1 seconds and exit with code 29.
+	[Child, PID: 2582]: Now exiting...
+[Parent]: Child 2582 finished with status code 29. Onward!
+[Parent]: I am waiting for PID 2583 to finish.
+	[Child, PID: 2583]: I am the child and I will wait 3 seconds and exit with code 28.
+	[Child, PID: 2583]: Now exiting...
+[Parent]: Child 2583 finished with status code 28. Onward!
+[Parent]: I am waiting for PID 2584 to finish.
+	[Child, PID: 2584]: I am the child and I will wait 1 seconds and exit with code 48.
+	[Child, PID: 2584]: Now exiting...
+[Parent]: Child 2584 finished with status code 48. Onward!
+]0;cs3013@cs3013vm: ~/project_1cs3013@cs3013vm:~/project_1$ ./generation
+Read seed value: 12345
+Random decendant count: 12
+[Parent, PID: 2585]: I am waiting for PID 2586 to finish.
+	[Child, PID: 2586]: I was called with descendant count = 12. I'll have 11 descendant(s).
+[Parent, PID: 2586]: I am waiting for PID 2587 to finish.
+	[Child, PID: 2587]: I was called with descendant count = 11. I'll have 10 descendant(s).
+[Parent, PID: 2587]: I am waiting for PID 2588 to finish.
+	[Child, PID: 2588]: I was called with descendant count = 10. I'll have 9 descendant(s).
+[Parent, PID: 2588]: I am waiting for PID 2589 to finish.
+	[Child, PID: 2589]: I was called with descendant count = 9. I'll have 8 descendant(s).
+[Parent, PID: 2589]: I am waiting for PID 2590 to finish.
+	[Child, PID: 2590]: I was called with descendant count = 8. I'll have 7 descendant(s).
+[Parent, PID: 2590]: I am waiting for PID 2591 to finish.
+	[Child, PID: 2591]: I was called with descendant count = 7. I'll have 6 descendant(s).
+[Parent, PID: 2591]: I am waiting for PID 2592 to finish.
+	[Child, PID: 2592]: I was called with descendant count = 6. I'll have 5 descendant(s).
+[Parent, PID: 2592]: I am waiting for PID 2593 to finish.
+	[Child, PID: 2593]: I was called with descendant count = 5. I'll have 4 descendant(s).
+[Parent, PID: 2593]: I am waiting for PID 2594 to finish.
+	[Child, PID: 2594]: I was called with descendant count = 4. I'll have 3 descendant(s).
+[Parent, PID: 2594]: I am waiting for PID 2595 to finish.
+	[Child, PID: 2595]: I was called with descendant count = 3. I'll have 2 descendant(s).
+[Parent, PID: 2595]: I am waiting for PID 2596 to finish.
+	[Child, PID: 2596]: I was called with descendant count = 2. I'll have 1 descendant(s).
+[Parent, PID: 2596]: I am waiting for PID 2597 to finish.
+	[Child, PID: 2597]: I was called with descendant count = 1. I'll have 0 descendant(s).
+[Parent, PID: 2596]: Child 2597 finished with status code 0. It's now my turn to exit.
+[Parent, PID: 2595]: Child 2596 finished with status code 1. It's now my turn to exit.
+[Parent, PID: 2594]: Child 2595 finished with status code 2. It's now my turn to exit.
+[Parent, PID: 2593]: Child 2594 finished with status code 3. It's now my turn to exit.
+[Parent, PID: 2592]: Child 2593 finished with status code 4. It's now my turn to exit.
+[Parent, PID: 2591]: Child 2592 finished with status code 5. It's now my turn to exit.
+[Parent, PID: 2590]: Child 2591 finished with status code 6. It's now my turn to exit.
+[Parent, PID: 2589]: Child 2590 finished with status code 7. It's now my turn to exit.
+[Parent, PID: 2588]: Child 2589 finished with status code 8. It's now my turn to exit.
+[Parent, PID: 2587]: Child 2588 finished with status code 9. It's now my turn to exit.
+[Parent, PID: 2586]: Child 2587 finished with status code 10. It's now my turn to exit.
+[Parent, PID: 2585]: Child 2586 finished with status code 11. It's now my turn to exit.
+]0;cs3013@cs3013vm: ~/project_1cs3013@cs3013vm:~/project_1$ ./explorer
+Read seed value: 12345
+Selection #1: /usr [SUCCESS]
+[Parent]: I am waiting for PID 2600 to finish.
+	[Child, PID: 2600]: Executing 'ls -tr' command...
+libx32	lib32  local  lib64  games  libexec  src  lib  share  include  sbin  bin
+[Parent]: Child 2600 finished with status code 0. Onward!
+Selection #2: /usr/bin [SUCCESS]
+[Parent]: I am waiting for PID 2601 to finish.
+	[Child, PID: 2601]: Executing 'ls -tr' command...
+ c89-gcc			    pacat
+ dirsplit			    busybox
+ c99-gcc			    mesa-overlay-control.py
+ apturl				    nmtui
+ pnm2ppa			    nm-online
+ calibrate_ppa			    nmcli
+ linux-boot-prober		    gdbtui
+ os-prober			    gdbserver
+ syslinux-legacy		    gdb-add-index
+ time				    gdb
+ zipsplit			    gcore
+ zipnote			    gvfs-tree
+ zipcloak			    gvfs-trash
+ zip				    gvfs-set-attribute
+ lp_solve			    gvfs-save
+ laptop-detect			    gvfs-rm
+ lspgpot			    gvfs-rename
+ apgbfm				    gvfs-open
+ apg				    gvfs-move
+ kerneloops-submit		    gvfs-mount
+ ijs_pxljr			    gvfs-monitor-file
+ ucs2any			    gvfs-monitor-dir
+ mkfontscale			    gvfs-mkdir
+ mkfontdir			    gvfs-mime
+ fonttosfnt			    gvfs-ls
+ bdftruncate			    gvfs-info
+ bdftopcf			    gvfs-copy
+ xvidtune			    gvfs-cat
+ xstdcmap			    update-manager
+ xsetroot			    ubuntu-security-status
+ xsetpointer			    hwe-support-status
+ xsetmode			    kmod
+ xset				    whereis
+ xrefresh			    wdctl
+ xrdb				    wall
+ xrandr				    uuidparse
+ xmodmap			    uuidgen
+ xkeystone			    utmpdump
+ xhost				    unshare
+ xgamma				    umount
+ xcmsdb				    taskset
+ showrgb			    su
+ sessreg			    setterm
+ iceauth			    setsid
+ make-first-existing-target	    setpriv
+ make				    setarch
+ mimetype			    scriptreplay
+ mimeopen			    script
+ min12xxw			    rev
+ esc-m				    resizepart
+ select-default-iwrap		    renice
+ ispell-wrapper			    rename.ul
+ ucfr				    prlimit
+ ucfq				    partx
+ ucf				    nsenter
+ lcf				    namei
+ sed				    mountpoint
+ xdg-user-dirs-gtk-update	    mount
+ dc				    more
+ bc				    mesg
+ xdg-user-dirs-update		    mcookie
+ xdg-user-dir			    lsns
+ ltrace				    lsmem
+ pon				    lslogins
+ poff				    lslocks
+ plog				    lsipc
+ gkbd-keyboard-display		    lscpu
+ netkit-ftp			    lsblk
+ dh_installxmlcatalogs		    logger
+ strace-log-merge		    last
+ im-config			    ipcs
+ im-launch			    ipcrm
+ sdiff				    ipcmk
+ diff3				    ionice
+ diff				    getopt
+ cmp				    flock
+ unicode_stop			    findmnt
+ unicode_start			    fincore
+ splitfont			    fallocate
+ showkey			    dmesg
+ showconsolefont		    delpart
+ setmetamode			    chrt
+ setlogcons			    choom
+ setleds			    addpart
+ setkeycodes			    gtk-update-icon-cache
+ setfont			    gtk-query-settings
+ screendump			    gtk-launch
+ resizecons			    gtk-encode-symbolic-svg
+ psfxtable			    gtk-builder-tool
+ openvt				    broadwayd
+ mk_modmap			    fwupdtool
+ mapscrn			    fwupdmgr
+ loadunimap			    fwupdate
+ loadkeys			    dfu-tool
+ kbd_mode			    dbxtool
+ kbdinfo			    pkttyagent
+ getkeycodes			    pkexec
+ fgconsole			    pkcheck
+ dumpkeys			    pkaction
+ deallocvt			    boltctl
+ codepage			    x86_64-linux-gnu-gcov-tool-9
+ chvt				    x86_64-linux-gnu-gcov-dump-9
+ canberra-gtk-play		    x86_64-linux-gnu-gcov-9
+ deb-systemd-invoke		    x86_64-linux-gnu-gcc-ranlib-9
+ deb-systemd-helper		    x86_64-linux-gnu-gcc-nm-9
+ paperconf			    x86_64-linux-gnu-gcc-ar-9
+ usb-creator-gtk		    x86_64-linux-gnu-gcc-9
+ volname			    x86_64-linux-gnu-g++-9
+ eject				    x86_64-linux-gnu-cpp-9
+ dash				    gcov-tool-9
+ patch				    gcov-dump-9
+ debconf-show			    gcov-9
+ debconf-set-selections		    gcc-ranlib-9
+ debconf-escape			    gcc-nm-9
+ debconf-copydb			    gcc-ar-9
+ debconf-communicate		    gcc-9
+ debconf-apt-progress		    g++-9
+ debconf			    sbverify
+ mtr-packet			    sbvarsign
+ mtr				    sbsign
+ xinit				    sbsiglist
+ startx				    sbkeysync
+ xauth				    sbattach
+ lsb_release			    kmodsign
+ lesspipe			    tar
+ bzexe				    ubuntu-drivers
+ yes				    quirks-handler
+ whoami				    nvidia-detector
+ who				    gpu-manager
+ wc				    ssh-keyscan
+ vdir				    ssh-keygen
+ users				    ssh-argv0
+ unlink				    ssh-agent
+ uniq				    ssh-add
+ unexpand			    ssh
+ uname				    sftp
+ tty				    scp
+ tsort				    monitor-sensor
+ truncate			    zdump
+ true				    tzselect
+ tr				    sprof
+ touch				    sotruss
+ timeout			    rpcgen
+ test				    pldd
+ tee				    mtrace
+ tail				    localedef
+ tac				    locale
+ sync				    ldd
+ sum				    iconv
+ stty				    getent
+ stdbuf				    getconf
+ stat				    gencat
+ split				    catchsegv
+ sort				    mmcli
+ sleep				    znew
+ shuf				    zmore
+ shred				    zless
+ sha512sum			    zgrep
+ sha384sum			    zforce
+ sha256sum			    zfgrep
+ sha224sum			    zegrep
+ sha1sum			    zdiff
+ seq				    zcmp
+ runcon				    zcat
+ rmdir				    uncompress
+ rm				    gzip
+ realpath			    gzexe
+ readlink			    gunzip
+ pwd				    xzmore
+ ptx				    xzless
+ printf				    xzgrep
+ printenv			    xzdiff
+ pr				    xz
+ pinky				    lzmainfo
+ pathchk			    clear_console
+ paste				    bashbug
+ od				    bash
+ numfmt				    gnome-control-center
+ nproc				    timedatectl
+ nohup				    systemd-tty-ask-password-agent
+ nl				    systemd-tmpfiles
+ nice				    systemd-sysusers
+ mv				    systemd-stdio-bridge
+ mktemp				    systemd-socket-activate
+ mknod				    systemd-run
+ mkfifo				    systemd-path
+ mkdir				    systemd-notify
+ md5sum				    systemd-mount
+ ls				    systemd-machine-id-setup
+ logname			    systemd-inhibit
+ ln				    systemd-id128
+ link				    systemd-escape
+ join				    systemd-detect-virt
+ install			    systemd-delta
+ id				    systemd-cgtop
+ hostid				    systemd-cgls
+ head				    systemd-cat
+ groups				    systemd-ask-password
+ fold				    systemd-analyze
+ fmt				    systemctl
+ false				    resolvectl
+ factor				    networkctl
+ expr				    loginctl
+ expand				    localectl
+ env				    journalctl
+ echo				    hostnamectl
+ du				    busctl
+ dirname			    bootctl
+ dircolors			    update-notifier
+ dir				    networkd-dispatcher
+ df				    oem-getlogs
+ dd				    apport-unpack
+ date				    apport-cli
+ cut				    orca
+ csplit				    unattended-upgrade
+ cp				    apt-sortpkgs
+ comm				    apt-mark
+ cksum				    apt-key
+ chown				    apt-get
+ chmod				    apt-ftparchive
+ chgrp				    apt-extracttemplates
+ chcon				    apt-config
+ cat				    apt-cdrom
+ basename			    apt-cache
+ base64				    apt
+ base32				    update-alternatives
+ b2sum				    dpkg-vendor
+ arch				    dpkg-trigger
+'['				    dpkg-statoverride
+ bzmore				    dpkg-split
+ bzip2recover			    dpkg-source
+ bzip2				    dpkg-shlibdeps
+ bzgrep				    dpkg-scansources
+ bzdiff				    dpkg-scanpackages
+ bzcat				    dpkg-query
+ bunzip2			    dpkg-parsechangelog
+ fakeroot-tcp			    dpkg-name
+ fakeroot-sysv			    dpkg-mergechangelogs
+ faked-tcp			    dpkg-maintscript-helper
+ faked-sysv			    dpkg-gensymbols
+ transicc			    dpkg-gencontrol
+ tificc				    dpkg-genchanges
+ psicc				    dpkg-genbuildinfo
+ linkicc			    dpkg-divert
+ jpgicc				    dpkg-distaddfile
+ baobab				    dpkg-deb
+ xdg-dbus-proxy			    dpkg-checkbuilddeps
+ ipod-time-sync			    dpkg-buildpackage
+ ipod-read-sysinfo-extended	    dpkg-buildflags
+ gnome-power-statistics		    dpkg-architecture
+ mousetweaks			    dpkg
+ gnome-todo			    ppdpo
+ usbreset			    ppdmerge
+ usbhid-dump			    ppdi
+ usb-devices			    ppdhtml
+ lsusb				    ppdc
+ install-info			    lpstat
+ info				    lprm
+ inputattach			    lpr
+ run-mailcap			    lpq
+ cautious-launcher		    lpoptions
+ perldoc			    lp
+ hostname			    ipptool
+ pstree				    ippfind
+ pslog				    cupstestppd
+ prtstat			    cancel
+ peekfd				    lsattr
+ killall			    chattr
+ fuser				    sdptool
+ sensible-pager			    rfcomm
+ sensible-editor		    rctest
+ sensible-browser		    obexctl
+ select-editor			    l2test
+ acpi_listen			    l2ping
+ lwp-request			    hex2hcd
+ lwp-mirror			    hcitool
+ lwp-dump			    hciconfig
+ lwp-download			    hciattach
+ apport-bug			    gatttool
+ which				    ciptool
+ tempfile			    btmon
+ savelog			    btmgmt
+ run-parts			    btattach
+ ischroot			    bluetoothctl
+ file2brl			    bluemoon
+ upower				    bccmd
+ chardetect3			    openssl
+ syslinux			    c_rehash
+ rgrep				    watchgnupg
+ file				    symcryptrun
+ speech-dispatcher		    kbxutil
+ spd-say			    gpg-zip
+ spd-conf			    gpg-wks-server
+ unity-scope-loader		    gpgv
+ msexpand			    gpgtar
+ mscompress			    gpgsplit
+ rhythmbox-client		    gpgsm
+ rhythmbox			    gpgparsemail
+ apturl-gtk			    gpg-connect-agent
+ dh_bash-completion		    gpgconf
+ grep				    gpgcompose
+ fgrep				    gpg-agent
+ egrep				    gpg
+ helpztags			    dirmngr-client
+ zjsdecode			    dirmngr
+ xqxdecode			    ubuntu-advantage
+ usb_printerid			    pyjwt3
+ slxdecode			    gst-play-1.0
+ qpdldecode			    gst-discoverer-1.0
+ printer-profile		    gst-device-monitor-1.0
+ opldecode			    gst-typefind-1.0
+ oakdecode			    gst-launch-1.0
+ lavadecode			    gst-inspect-1.0
+ hipercdecode			    rsync
+ hbpldecode			    do-release-upgrade
+ gipddecode			    locale-check
+ foo2zjs-wrapper		    x86_64-linux-gnu-strip
+ foo2zjs-pstops			    x86_64-linux-gnu-strings
+ foo2zjs			    x86_64-linux-gnu-size
+ foo2xqx-wrapper		    x86_64-linux-gnu-readelf
+ foo2xqx			    x86_64-linux-gnu-ranlib
+ foo2slx-wrapper		    x86_64-linux-gnu-objdump
+ foo2slx			    x86_64-linux-gnu-objcopy
+ foo2qpdl-wrapper		    x86_64-linux-gnu-nm
+ foo2qpdl			    x86_64-linux-gnu-ld.gold
+ foo2oak-wrapper		    x86_64-linux-gnu-ld.bfd
+ foo2oak			    x86_64-linux-gnu-ld
+ foo2lava-wrapper		    x86_64-linux-gnu-gprof
+ foo2lava			    x86_64-linux-gnu-gold
+ foo2hp2600-wrapper		    x86_64-linux-gnu-elfedit
+ foo2hp				    x86_64-linux-gnu-dwp
+ foo2hiperc-wrapper		    x86_64-linux-gnu-c++filt
+ foo2hiperc			    x86_64-linux-gnu-as
+ foo2hbpl2-wrapper		    x86_64-linux-gnu-ar
+ foo2hbpl2			    x86_64-linux-gnu-addr2line
+ foo2ddst-wrapper		    strip
+ foo2ddst			    strings
+ ddstdecode			    size
+ arm2hpdl			    readelf
+ traceroute6.iputils		    ranlib
+ tracepath			    objdump
+ ping				    objcopy
+ m2400w				    nm
+ m2300w-wrapper			    ld.gold
+ m2300w				    ld.bfd
+ dh_perl_openssl		    ld
+ x86_64-pc-linux-gnu-pkg-config     gprof
+ pkg-config			    gold
+ perli11ndoc			    elfedit
+ ss				    dwp
+ routel				    c++filt
+ routef				    as
+ rdma				    ar
+ nstat				    addr2line
+ lnstat				    pdfunite
+ ip				    pdftotext
+ ubuntu-distro-info		    pdftops
+ debian-distro-info		    pdftoppm
+ crontab			    pdftohtml
+ ssh-copy-id			    pdftocairo
+ mawk				    pdfsig
+ ibus-table-createdb		    pdfseparate
+ xargs				    pdfinfo
+ find				    pdfimages
+ mkzftree			    pdffonts
+ isovfy				    pdfdetach
+ isoinfo			    pdfattach
+ isodump			    gdk-pixbuf-thumbnailer
+ geteltorito			    gdk-pixbuf-pixdata
+ genisoimage			    gdk-pixbuf-csource
+ devdump			    udevadm
+ whiptail			    systemd-hwdb
+ red				    mako-render
+ ed				    nsupdate
+ gnome-thumbnail-font		    nslookup
+ gnome-font-viewer		    mdig
+ totem-video-thumbnailer	    host
+ totem				    dig
+ whatis				    delv
+ man-recode			    ps2txt
+ manpath			    ps2ps2
+ mandb				    ps2ps
+ man				    ps2pdfwr
+ lexgrog			    ps2pdf14
+ catman				    ps2pdf13
+ tset				    ps2pdf12
+ tput				    ps2pdf
+ toe				    ps2epsi
+ tic				    ps2ascii
+ tabs				    printafm
+ infocmp			    pphs
+ clear				    pfbtopfa
+ zenity				    pf2afm
+ gdialog			    pdf2ps
+ xkbwatch			    pdf2dsc
+ xkbvleds			    gsnd
+ xkbprint			    gslp
+ xkbevd				    gslj
+ xkbcomp			    gsdj500
+ xkbbell			    gsdj
+ setxkbmap			    gsbj
+ xwud				    gs
+ xwd				    ghostscript
+ xmore				    eps2eps
+ xman				    dvipdf
+ xmag				    zipdetails
+ xlogo				    xsubpp
+ xload				    splain
+ xgc				    shasum
+ xeyes				    ptargrep
+ xedit				    ptardiff
+ xditview			    ptar
+ xcutsel			    prove
+ xcursorgen			    podselect
+ xconsole			    podchecker
+ xclock				    pod2usage
+ xclipboard			    pod2text
+ xcalc				    pod2man
+ xbiff				    pod2html
+ x11perfcomp			    pl2pm
+ x11perf			    piconv
+ transset			    perlthanks
+ rendercheck			    perlivp
+ oclock				    perlbug
+ ico				    perl5.30-x86_64-linux-gnu
+ bmtoa				    perl5.30.0
+ bitmap				    perl
+ atobm				    libnetcfg
+ xsm				    json_pp
+ smproxy			    instmodsh
+ rstartd			    h2xs
+ rstart				    h2ph
+ xwininfo			    encguess
+ xvinfo				    enc2xs
+ xprop				    cpan5.30-x86_64-linux-gnu
+ xmessage			    cpan
+ xlsfonts			    corelist
+ xlsclients			    zipinfo
+ xlsatoms			    zipgrep
+ xkill				    unzipsfx
+ xfontsel			    unzip
+ xfd				    funzip
+ xev				    ubuntu-report
+ xdriinfo			    unopkg
+ xdpyinfo			    soffice
+ viewres			    lowriter
+ luit				    loweb
+ listres			    lomath
+ editres			    loimpress
+ appres				    lofromtemplate
+ setfacl			    loffice
+ getfacl			    lodraw
+ chacl				    localc
+ xbrlapi			    libreoffice
+ vstp				    dbus-uuidgen
+ eutp				    dbus-update-activation-environment
+ brltty-ttb			    dbus-send
+ brltty-trtxt			    dbus-run-session
+ brltty-ctb			    dbus-monitor
+ brltty				    dbus-launch
+ ulockmgr_server		    dbus-daemon
+ fusermount			    dbus-cleanup-sockets
+ gnome-session-custom-session	    ntfswipe
+ gnome-calculator		    ntfsusermap
+ gcalccmd			    ntfstruncate
+ nc.openbsd			    ntfssecaudit
+ dconf				    ntfsrecover
+ xsetwacom			    ntfsmove
+ isdv4-serial-inputattach	    ntfsls
+ isdv4-serial-debugger		    ntfsinfo
+ gnome-keyring-daemon		    ntfsfix
+ gnome-keyring-3		    ntfsfallocate
+ rygel				    ntfsdecrypt
+ gnome-screenshot		    ntfscmp
+ py3compile			    ntfscluster
+ py3clean			    ntfscat
+ seahorse			    ntfs-3g.probe
+ keyring			    ntfs-3g
+ appstreamcli			    lowntfs-3g
+ gcr-viewer			    thunderbird
+ x86_64-linux-gnu-gcov-tool	    python3.8
+ x86_64-linux-gnu-gcov-dump	    pygettext3.8
+ x86_64-linux-gnu-gcov		    pydoc3.8
+ x86_64-linux-gnu-gcc-ranlib	    pdb3.8
+ x86_64-linux-gnu-gcc-nm	    ubuntu-core-launcher
+ x86_64-linux-gnu-gcc-ar	    snapfuse
+ x86_64-linux-gnu-gcc		    snapctl
+ x86_64-linux-gnu-g++		    snap
+ gcov-tool			    sg
+ gcov-dump			    passwd
+ gcov				    newgrp
+ gcc-ranlib			    login
+ gcc-nm				    lastlog
+ gcc-ar				    gpasswd
+ gcc				    faillog
+ g++				    expiry
+ colormgr			    chsh
+ cd-it8				    chfn
+ cd-iccdump			    chage
+ cd-fix-profile			    grub-syslinux2cfg
+ cd-create-profile		    grub-script-check
+ notify-send			    grub-render-label
+ troff				    grub-ntldr-img
+ tbl				    grub-mount
+ soelim				    grub-mkstandalone
+ preconv			    grub-mkrescue
+ pic				    grub-mkrelpath
+ nroff				    grub-mkpasswd-pbkdf2
+ neqn				    grub-mknetdir
+ grotty				    grub-mklayout
+ grops				    grub-mkimage
+ grog				    grub-mkfont
+ groff				    grub-menulst2cfg
+ eqn				    grub-kbdcomp
+ uz				    grub-glue-efi
+ tgz				    grub-fstest
+ mxtar				    grub-file
+ mtools				    grub-editenv
+ mkmanifest			    Xwayland
+ mcomp				    Xorg
+ mcheck				    Xephyr
+ amuFormat.sh			    X
+ ngettext			    gtf
+ gettext.sh			    cvt
+ gettext			    nautilus-autorun-software
+ envsubst			    nautilus
+ pinentry-gnome3		    xxd
+ pinentry-curses		    vim.tiny
+ telnet.netkit			    sudoreplay
+ xinput				    sudoedit
+ update-mime-database		    sudo
+ transmission-gtk		    cvtsudoers
+ rdiffdir			    firefox
+ duplicity			    X11
+ gnome-session-quit		    POST
+ gnome-session-properties	    HEAD
+ gnome-session-inhibit		    GET
+ gnome-session			    apt-add-repository
+ setupcon			    apropos
+ ckbcomp			    apport-collect
+ python3-pasteurize		    arecord
+ python3-futurize		    avahi-publish-service
+ ul				    avahi-publish-address
+ printerbanner			    avahi-browse-domains
+ ncal				    awk
+ lorder				    avahi-resolve-host-name
+ look				    avahi-resolve-address
+ hexdump			    browse
+ column				    captoinfo
+ colrm				    cal
+ colcrt				    bzless
+ col				    bzfgrep
+ calendar			    bzegrep
+ bsd-write			    bzcmp
+ bsd-from			    chardet3
+ whoopsie-preferences		    compose
+ hp-plugin-ubuntu		    ctstat
+ bwrap				    cpp-9
+ kernel-install			    cpp
+ session-migration		    desktop-file-edit
+ fc-validate			    distro-info
+ fc-scan			    domainname
+ fc-query			    dnsdomainname
+ fc-pattern			    driverless
+ fc-match			    editor
+ fc-list			    edit
+ fc-conflist			    ex
+ fc-cat				    foo2zjs-icc2ps
+ fc-cache			    ftp
+ remmina-gnome			    from
+ gnome-session-remmina		    foomatic-rip
+ ttfread			    fwupdagent
+ nano				    futurize
+ remmina-file-wrapper		    geqn
+ remmina			    gjs
+ gvfs-less			    gio-querymodules
+ intel-virtual-output		    ginstall-info
+ vmwarectrl			    glib-compile-schemas
+ strace				    gnome-characters
+ update-desktop-database	    gnome-keyring
+ desktop-file-validate		    gnome-help
+ desktop-file-install		    gnome-text-editor
+ gedit				    gnome-www-browser
+ orca-dm-wrapper		    gpic
+ gamemoderun			    gtbl
+ gamemoded			    gstreamer-codec-install
+ aa-exec			    hd
+ aa-enabled			    i386
+ gnome-logs			    hp-timedate
+ shotwell			    hp-testpage
+ gnome-terminal.wrapper		    hp-setup
+ gnome-terminal.real		    hp-scan
+ gnome-terminal			    hp-query
+ deja-dup			    hp-probe
+ simple-scan			    hp-plugin
+ gnome-calendar			    hp-pkservice
+ linux-update-symlinks		    hp-makeuri
+ linux-check-removal		    hp-logcapture
+ ibus-setup			    hp-levels
+ ibus-daemon			    hp-info
+ ibus				    hp-firmware
+ lesskey			    hp-doctor
+ lessecho			    hp-config_usb_printer
+ less				    hp-colorcal
+ eog				    hp-clean
+ nm-connection-editor		    hp-check
+ nm-applet			    hp-align
+ umax_pp			    infobrowser
+ scanimage			    infotocap
+ sane-find-scanner		    iptables-xml
+ gamma4scanimage		    lastb
+ tracker			    lessfile
+ pkmon				    linux64
+ pkcon				    linux32
+ cheese				    lsmod
+ gnome-language-selector	    lz
+ check-language-support		    mclasserase
+ bluetooth-sendto		    mcd
+ plymouth			    mcat
+ spice-vdagent			    mbadblocks
+ system-config-printer-applet	    mattrib
+ system-config-printer		    lzmore
+ scp-dbus-service		    lzma
+ install-printerdriver		    lzless
+ enchant-lsmod-2		    lzgrep
+ enchant-2			    lzfgrep
+ nautilus-sendto		    lzegrep
+ aptdcon			    lzdiff
+ gnome-system-monitor		    lzcmp
+ lshw				    lzcat
+ lsof				    lz4cat
+ trust				    lz4c
+ p11-kit			    mdeltree
+ migrate-pubring-from-classic-gpg   mdel
+ xdg-settings			    md5sum.textutils
+ xdg-screensaver		    mcopy
+ xdg-open			    minfo
+ xdg-mime			    mformat
+ xdg-icon-resource		    mdu
+ xdg-email			    mdir
+ xdg-desktop-menu		    mkisofs
+ xdg-desktop-icon		    mlabel
+ whoopsie			    mt
+ gjs-console			    mshowfat
+ fprintd-verify			    mshortname
+ fprintd-list			    mren
+ fprintd-enroll			    mrd
+ fprintd-delete			    mpartition
+ wpa_passphrase			    mmove
+ lsinitramfs			    mmount
+ setpci				    mmd
+ lspci				    mtoolstest
+ evince-thumbnailer		    mtype
+ evince-previewer		    mzip
+ evince				    nc
+ yelp				    nawk
+ gnome-disks			    netcat
+ gnome-disk-image-mounter	    nisdomainname
+ file-roller			    nmtui-hostname
+ speaker-test			    nmtui-edit
+ iecset				    nmtui-connect
+ axfer				    on_ac_power
+ aseqnet			    parecord
+ aseqdump			    parec
+ arecordmidi			    paplay
+ aplaymidi			    pamon
+ aplay				    pager
+ amixer				    pasteurize
+ amidi				    pdb3
+ alsaucm			    pftp
+ alsatplg			    pinentry-x11
+ alsamixer			    pinentry
+ alsaloop			    pidof
+ alsabat			    pico
+ aconnect			    ping6
+ libwacom-list-local-devices	    ping4
+ gnome-shell-perf-tool		    pkill
+ gnome-shell-extension-tool	    print
+ gnome-shell			    psfstriptable
+ gnome-extensions		    psfgettable
+ lz4				    psfaddtable
+ unmkinitramfs			    pstree.x11
+ avahi-set-host-name		    python3
+ avahi-resolve			    pygettext3
+ avahi-publish			    pydoc3
+ avahi-browse			    py3versions
+ linux-version			    rcp
+ gdm-screenshot			    rbash
+ gdmflexiserver			    reset
+ gsettings			    rlogin
+ gresource			    rsh
+ gio				    rrsync
+ gdbus				    rnano
+ gapplication			    rview
+ word-list-compress		    rtstat
+ run-with-aspell		    see
+ prezip-bin			    sh
+ prezip				    slogin
+ preunzip			    snice
+ precat				    static-sh
+ aspell-import			    systemd
+ aspell				    systemd-resolve
+ mt-gnu				    systemd-umount
+ cpio				    telnet
+ udisksctl			    traceroute6
+ w.procps			    ubuntu-bug
+ watch				    ua
+ vmstat				    unattended-upgrades
+ uptime				    unlzma
+ top				    unlz4
+ tload				    unxz
+ slabtop			    view
+ skill				    vi
+ pwdx				    w
+ ps				    x-www-browser
+ pmap				    x-window-manager
+ pgrep				    x-terminal-emulator
+ kill				    x-session-manager
+ free				    write
+ unsquashfs			    x86_64-linux-gnu-cpp
+ mksquashfs			    x86_64
+ software-properties-gtk	    x86_64-linux-gnu-pkg-config
+ add-apt-repository		    ypdomainname
+ mutter				    xzfgrep
+ wget				    xzegrep
+ start-pulseaudio-x11		    xzcmp
+ pulseaudio			    xzcat
+ pax11publish			    i686-linux-gnu-pkg-config
+ pasuspender			    fakeroot
+ pa-info			    cc
+ padsp				    c99
+ pactl				    c89
+ pacmd				    c++
+[Parent]: Child 2601 finished with status code 0. Onward!
+Selection #3: /usr/bin [SUCCESS]
+[Parent]: I am waiting for PID 2602 to finish.
+	[Child, PID: 2602]: Executing 'ls -tr' command...
+ c89-gcc			    pacat
+ dirsplit			    busybox
+ c99-gcc			    mesa-overlay-control.py
+ apturl				    nmtui
+ pnm2ppa			    nm-online
+ calibrate_ppa			    nmcli
+ linux-boot-prober		    gdbtui
+ os-prober			    gdbserver
+ syslinux-legacy		    gdb-add-index
+ time				    gdb
+ zipsplit			    gcore
+ zipnote			    gvfs-tree
+ zipcloak			    gvfs-trash
+ zip				    gvfs-set-attribute
+ lp_solve			    gvfs-save
+ laptop-detect			    gvfs-rm
+ lspgpot			    gvfs-rename
+ apgbfm				    gvfs-open
+ apg				    gvfs-move
+ kerneloops-submit		    gvfs-mount
+ ijs_pxljr			    gvfs-monitor-file
+ ucs2any			    gvfs-monitor-dir
+ mkfontscale			    gvfs-mkdir
+ mkfontdir			    gvfs-mime
+ fonttosfnt			    gvfs-ls
+ bdftruncate			    gvfs-info
+ bdftopcf			    gvfs-copy
+ xvidtune			    gvfs-cat
+ xstdcmap			    update-manager
+ xsetroot			    ubuntu-security-status
+ xsetpointer			    hwe-support-status
+ xsetmode			    kmod
+ xset				    whereis
+ xrefresh			    wdctl
+ xrdb				    wall
+ xrandr				    uuidparse
+ xmodmap			    uuidgen
+ xkeystone			    utmpdump
+ xhost				    unshare
+ xgamma				    umount
+ xcmsdb				    taskset
+ showrgb			    su
+ sessreg			    setterm
+ iceauth			    setsid
+ make-first-existing-target	    setpriv
+ make				    setarch
+ mimetype			    scriptreplay
+ mimeopen			    script
+ min12xxw			    rev
+ esc-m				    resizepart
+ select-default-iwrap		    renice
+ ispell-wrapper			    rename.ul
+ ucfr				    prlimit
+ ucfq				    partx
+ ucf				    nsenter
+ lcf				    namei
+ sed				    mountpoint
+ xdg-user-dirs-gtk-update	    mount
+ dc				    more
+ bc				    mesg
+ xdg-user-dirs-update		    mcookie
+ xdg-user-dir			    lsns
+ ltrace				    lsmem
+ pon				    lslogins
+ poff				    lslocks
+ plog				    lsipc
+ gkbd-keyboard-display		    lscpu
+ netkit-ftp			    lsblk
+ dh_installxmlcatalogs		    logger
+ strace-log-merge		    last
+ im-config			    ipcs
+ im-launch			    ipcrm
+ sdiff				    ipcmk
+ diff3				    ionice
+ diff				    getopt
+ cmp				    flock
+ unicode_stop			    findmnt
+ unicode_start			    fincore
+ splitfont			    fallocate
+ showkey			    dmesg
+ showconsolefont		    delpart
+ setmetamode			    chrt
+ setlogcons			    choom
+ setleds			    addpart
+ setkeycodes			    gtk-update-icon-cache
+ setfont			    gtk-query-settings
+ screendump			    gtk-launch
+ resizecons			    gtk-encode-symbolic-svg
+ psfxtable			    gtk-builder-tool
+ openvt				    broadwayd
+ mk_modmap			    fwupdtool
+ mapscrn			    fwupdmgr
+ loadunimap			    fwupdate
+ loadkeys			    dfu-tool
+ kbd_mode			    dbxtool
+ kbdinfo			    pkttyagent
+ getkeycodes			    pkexec
+ fgconsole			    pkcheck
+ dumpkeys			    pkaction
+ deallocvt			    boltctl
+ codepage			    x86_64-linux-gnu-gcov-tool-9
+ chvt				    x86_64-linux-gnu-gcov-dump-9
+ canberra-gtk-play		    x86_64-linux-gnu-gcov-9
+ deb-systemd-invoke		    x86_64-linux-gnu-gcc-ranlib-9
+ deb-systemd-helper		    x86_64-linux-gnu-gcc-nm-9
+ paperconf			    x86_64-linux-gnu-gcc-ar-9
+ usb-creator-gtk		    x86_64-linux-gnu-gcc-9
+ volname			    x86_64-linux-gnu-g++-9
+ eject				    x86_64-linux-gnu-cpp-9
+ dash				    gcov-tool-9
+ patch				    gcov-dump-9
+ debconf-show			    gcov-9
+ debconf-set-selections		    gcc-ranlib-9
+ debconf-escape			    gcc-nm-9
+ debconf-copydb			    gcc-ar-9
+ debconf-communicate		    gcc-9
+ debconf-apt-progress		    g++-9
+ debconf			    sbverify
+ mtr-packet			    sbvarsign
+ mtr				    sbsign
+ xinit				    sbsiglist
+ startx				    sbkeysync
+ xauth				    sbattach
+ lsb_release			    kmodsign
+ lesspipe			    tar
+ bzexe				    ubuntu-drivers
+ yes				    quirks-handler
+ whoami				    nvidia-detector
+ who				    gpu-manager
+ wc				    ssh-keyscan
+ vdir				    ssh-keygen
+ users				    ssh-argv0
+ unlink				    ssh-agent
+ uniq				    ssh-add
+ unexpand			    ssh
+ uname				    sftp
+ tty				    scp
+ tsort				    monitor-sensor
+ truncate			    zdump
+ true				    tzselect
+ tr				    sprof
+ touch				    sotruss
+ timeout			    rpcgen
+ test				    pldd
+ tee				    mtrace
+ tail				    localedef
+ tac				    locale
+ sync				    ldd
+ sum				    iconv
+ stty				    getent
+ stdbuf				    getconf
+ stat				    gencat
+ split				    catchsegv
+ sort				    mmcli
+ sleep				    znew
+ shuf				    zmore
+ shred				    zless
+ sha512sum			    zgrep
+ sha384sum			    zforce
+ sha256sum			    zfgrep
+ sha224sum			    zegrep
+ sha1sum			    zdiff
+ seq				    zcmp
+ runcon				    zcat
+ rmdir				    uncompress
+ rm				    gzip
+ realpath			    gzexe
+ readlink			    gunzip
+ pwd				    xzmore
+ ptx				    xzless
+ printf				    xzgrep
+ printenv			    xzdiff
+ pr				    xz
+ pinky				    lzmainfo
+ pathchk			    clear_console
+ paste				    bashbug
+ od				    bash
+ numfmt				    gnome-control-center
+ nproc				    timedatectl
+ nohup				    systemd-tty-ask-password-agent
+ nl				    systemd-tmpfiles
+ nice				    systemd-sysusers
+ mv				    systemd-stdio-bridge
+ mktemp				    systemd-socket-activate
+ mknod				    systemd-run
+ mkfifo				    systemd-path
+ mkdir				    systemd-notify
+ md5sum				    systemd-mount
+ ls				    systemd-machine-id-setup
+ logname			    systemd-inhibit
+ ln				    systemd-id128
+ link				    systemd-escape
+ join				    systemd-detect-virt
+ install			    systemd-delta
+ id				    systemd-cgtop
+ hostid				    systemd-cgls
+ head				    systemd-cat
+ groups				    systemd-ask-password
+ fold				    systemd-analyze
+ fmt				    systemctl
+ false				    resolvectl
+ factor				    networkctl
+ expr				    loginctl
+ expand				    localectl
+ env				    journalctl
+ echo				    hostnamectl
+ du				    busctl
+ dirname			    bootctl
+ dircolors			    update-notifier
+ dir				    networkd-dispatcher
+ df				    oem-getlogs
+ dd				    apport-unpack
+ date				    apport-cli
+ cut				    orca
+ csplit				    unattended-upgrade
+ cp				    apt-sortpkgs
+ comm				    apt-mark
+ cksum				    apt-key
+ chown				    apt-get
+ chmod				    apt-ftparchive
+ chgrp				    apt-extracttemplates
+ chcon				    apt-config
+ cat				    apt-cdrom
+ basename			    apt-cache
+ base64				    apt
+ base32				    update-alternatives
+ b2sum				    dpkg-vendor
+ arch				    dpkg-trigger
+'['				    dpkg-statoverride
+ bzmore				    dpkg-split
+ bzip2recover			    dpkg-source
+ bzip2				    dpkg-shlibdeps
+ bzgrep				    dpkg-scansources
+ bzdiff				    dpkg-scanpackages
+ bzcat				    dpkg-query
+ bunzip2			    dpkg-parsechangelog
+ fakeroot-tcp			    dpkg-name
+ fakeroot-sysv			    dpkg-mergechangelogs
+ faked-tcp			    dpkg-maintscript-helper
+ faked-sysv			    dpkg-gensymbols
+ transicc			    dpkg-gencontrol
+ tificc				    dpkg-genchanges
+ psicc				    dpkg-genbuildinfo
+ linkicc			    dpkg-divert
+ jpgicc				    dpkg-distaddfile
+ baobab				    dpkg-deb
+ xdg-dbus-proxy			    dpkg-checkbuilddeps
+ ipod-time-sync			    dpkg-buildpackage
+ ipod-read-sysinfo-extended	    dpkg-buildflags
+ gnome-power-statistics		    dpkg-architecture
+ mousetweaks			    dpkg
+ gnome-todo			    ppdpo
+ usbreset			    ppdmerge
+ usbhid-dump			    ppdi
+ usb-devices			    ppdhtml
+ lsusb				    ppdc
+ install-info			    lpstat
+ info				    lprm
+ inputattach			    lpr
+ run-mailcap			    lpq
+ cautious-launcher		    lpoptions
+ perldoc			    lp
+ hostname			    ipptool
+ pstree				    ippfind
+ pslog				    cupstestppd
+ prtstat			    cancel
+ peekfd				    lsattr
+ killall			    chattr
+ fuser				    sdptool
+ sensible-pager			    rfcomm
+ sensible-editor		    rctest
+ sensible-browser		    obexctl
+ select-editor			    l2test
+ acpi_listen			    l2ping
+ lwp-request			    hex2hcd
+ lwp-mirror			    hcitool
+ lwp-dump			    hciconfig
+ lwp-download			    hciattach
+ apport-bug			    gatttool
+ which				    ciptool
+ tempfile			    btmon
+ savelog			    btmgmt
+ run-parts			    btattach
+ ischroot			    bluetoothctl
+ file2brl			    bluemoon
+ upower				    bccmd
+ chardetect3			    openssl
+ syslinux			    c_rehash
+ rgrep				    watchgnupg
+ file				    symcryptrun
+ speech-dispatcher		    kbxutil
+ spd-say			    gpg-zip
+ spd-conf			    gpg-wks-server
+ unity-scope-loader		    gpgv
+ msexpand			    gpgtar
+ mscompress			    gpgsplit
+ rhythmbox-client		    gpgsm
+ rhythmbox			    gpgparsemail
+ apturl-gtk			    gpg-connect-agent
+ dh_bash-completion		    gpgconf
+ grep				    gpgcompose
+ fgrep				    gpg-agent
+ egrep				    gpg
+ helpztags			    dirmngr-client
+ zjsdecode			    dirmngr
+ xqxdecode			    ubuntu-advantage
+ usb_printerid			    pyjwt3
+ slxdecode			    gst-play-1.0
+ qpdldecode			    gst-discoverer-1.0
+ printer-profile		    gst-device-monitor-1.0
+ opldecode			    gst-typefind-1.0
+ oakdecode			    gst-launch-1.0
+ lavadecode			    gst-inspect-1.0
+ hipercdecode			    rsync
+ hbpldecode			    do-release-upgrade
+ gipddecode			    locale-check
+ foo2zjs-wrapper		    x86_64-linux-gnu-strip
+ foo2zjs-pstops			    x86_64-linux-gnu-strings
+ foo2zjs			    x86_64-linux-gnu-size
+ foo2xqx-wrapper		    x86_64-linux-gnu-readelf
+ foo2xqx			    x86_64-linux-gnu-ranlib
+ foo2slx-wrapper		    x86_64-linux-gnu-objdump
+ foo2slx			    x86_64-linux-gnu-objcopy
+ foo2qpdl-wrapper		    x86_64-linux-gnu-nm
+ foo2qpdl			    x86_64-linux-gnu-ld.gold
+ foo2oak-wrapper		    x86_64-linux-gnu-ld.bfd
+ foo2oak			    x86_64-linux-gnu-ld
+ foo2lava-wrapper		    x86_64-linux-gnu-gprof
+ foo2lava			    x86_64-linux-gnu-gold
+ foo2hp2600-wrapper		    x86_64-linux-gnu-elfedit
+ foo2hp				    x86_64-linux-gnu-dwp
+ foo2hiperc-wrapper		    x86_64-linux-gnu-c++filt
+ foo2hiperc			    x86_64-linux-gnu-as
+ foo2hbpl2-wrapper		    x86_64-linux-gnu-ar
+ foo2hbpl2			    x86_64-linux-gnu-addr2line
+ foo2ddst-wrapper		    strip
+ foo2ddst			    strings
+ ddstdecode			    size
+ arm2hpdl			    readelf
+ traceroute6.iputils		    ranlib
+ tracepath			    objdump
+ ping				    objcopy
+ m2400w				    nm
+ m2300w-wrapper			    ld.gold
+ m2300w				    ld.bfd
+ dh_perl_openssl		    ld
+ x86_64-pc-linux-gnu-pkg-config     gprof
+ pkg-config			    gold
+ perli11ndoc			    elfedit
+ ss				    dwp
+ routel				    c++filt
+ routef				    as
+ rdma				    ar
+ nstat				    addr2line
+ lnstat				    pdfunite
+ ip				    pdftotext
+ ubuntu-distro-info		    pdftops
+ debian-distro-info		    pdftoppm
+ crontab			    pdftohtml
+ ssh-copy-id			    pdftocairo
+ mawk				    pdfsig
+ ibus-table-createdb		    pdfseparate
+ xargs				    pdfinfo
+ find				    pdfimages
+ mkzftree			    pdffonts
+ isovfy				    pdfdetach
+ isoinfo			    pdfattach
+ isodump			    gdk-pixbuf-thumbnailer
+ geteltorito			    gdk-pixbuf-pixdata
+ genisoimage			    gdk-pixbuf-csource
+ devdump			    udevadm
+ whiptail			    systemd-hwdb
+ red				    mako-render
+ ed				    nsupdate
+ gnome-thumbnail-font		    nslookup
+ gnome-font-viewer		    mdig
+ totem-video-thumbnailer	    host
+ totem				    dig
+ whatis				    delv
+ man-recode			    ps2txt
+ manpath			    ps2ps2
+ mandb				    ps2ps
+ man				    ps2pdfwr
+ lexgrog			    ps2pdf14
+ catman				    ps2pdf13
+ tset				    ps2pdf12
+ tput				    ps2pdf
+ toe				    ps2epsi
+ tic				    ps2ascii
+ tabs				    printafm
+ infocmp			    pphs
+ clear				    pfbtopfa
+ zenity				    pf2afm
+ gdialog			    pdf2ps
+ xkbwatch			    pdf2dsc
+ xkbvleds			    gsnd
+ xkbprint			    gslp
+ xkbevd				    gslj
+ xkbcomp			    gsdj500
+ xkbbell			    gsdj
+ setxkbmap			    gsbj
+ xwud				    gs
+ xwd				    ghostscript
+ xmore				    eps2eps
+ xman				    dvipdf
+ xmag				    zipdetails
+ xlogo				    xsubpp
+ xload				    splain
+ xgc				    shasum
+ xeyes				    ptargrep
+ xedit				    ptardiff
+ xditview			    ptar
+ xcutsel			    prove
+ xcursorgen			    podselect
+ xconsole			    podchecker
+ xclock				    pod2usage
+ xclipboard			    pod2text
+ xcalc				    pod2man
+ xbiff				    pod2html
+ x11perfcomp			    pl2pm
+ x11perf			    piconv
+ transset			    perlthanks
+ rendercheck			    perlivp
+ oclock				    perlbug
+ ico				    perl5.30-x86_64-linux-gnu
+ bmtoa				    perl5.30.0
+ bitmap				    perl
+ atobm				    libnetcfg
+ xsm				    json_pp
+ smproxy			    instmodsh
+ rstartd			    h2xs
+ rstart				    h2ph
+ xwininfo			    encguess
+ xvinfo				    enc2xs
+ xprop				    cpan5.30-x86_64-linux-gnu
+ xmessage			    cpan
+ xlsfonts			    corelist
+ xlsclients			    zipinfo
+ xlsatoms			    zipgrep
+ xkill				    unzipsfx
+ xfontsel			    unzip
+ xfd				    funzip
+ xev				    ubuntu-report
+ xdriinfo			    unopkg
+ xdpyinfo			    soffice
+ viewres			    lowriter
+ luit				    loweb
+ listres			    lomath
+ editres			    loimpress
+ appres				    lofromtemplate
+ setfacl			    loffice
+ getfacl			    lodraw
+ chacl				    localc
+ xbrlapi			    libreoffice
+ vstp				    dbus-uuidgen
+ eutp				    dbus-update-activation-environment
+ brltty-ttb			    dbus-send
+ brltty-trtxt			    dbus-run-session
+ brltty-ctb			    dbus-monitor
+ brltty				    dbus-launch
+ ulockmgr_server		    dbus-daemon
+ fusermount			    dbus-cleanup-sockets
+ gnome-session-custom-session	    ntfswipe
+ gnome-calculator		    ntfsusermap
+ gcalccmd			    ntfstruncate
+ nc.openbsd			    ntfssecaudit
+ dconf				    ntfsrecover
+ xsetwacom			    ntfsmove
+ isdv4-serial-inputattach	    ntfsls
+ isdv4-serial-debugger		    ntfsinfo
+ gnome-keyring-daemon		    ntfsfix
+ gnome-keyring-3		    ntfsfallocate
+ rygel				    ntfsdecrypt
+ gnome-screenshot		    ntfscmp
+ py3compile			    ntfscluster
+ py3clean			    ntfscat
+ seahorse			    ntfs-3g.probe
+ keyring			    ntfs-3g
+ appstreamcli			    lowntfs-3g
+ gcr-viewer			    thunderbird
+ x86_64-linux-gnu-gcov-tool	    python3.8
+ x86_64-linux-gnu-gcov-dump	    pygettext3.8
+ x86_64-linux-gnu-gcov		    pydoc3.8
+ x86_64-linux-gnu-gcc-ranlib	    pdb3.8
+ x86_64-linux-gnu-gcc-nm	    ubuntu-core-launcher
+ x86_64-linux-gnu-gcc-ar	    snapfuse
+ x86_64-linux-gnu-gcc		    snapctl
+ x86_64-linux-gnu-g++		    snap
+ gcov-tool			    sg
+ gcov-dump			    passwd
+ gcov				    newgrp
+ gcc-ranlib			    login
+ gcc-nm				    lastlog
+ gcc-ar				    gpasswd
+ gcc				    faillog
+ g++				    expiry
+ colormgr			    chsh
+ cd-it8				    chfn
+ cd-iccdump			    chage
+ cd-fix-profile			    grub-syslinux2cfg
+ cd-create-profile		    grub-script-check
+ notify-send			    grub-render-label
+ troff				    grub-ntldr-img
+ tbl				    grub-mount
+ soelim				    grub-mkstandalone
+ preconv			    grub-mkrescue
+ pic				    grub-mkrelpath
+ nroff				    grub-mkpasswd-pbkdf2
+ neqn				    grub-mknetdir
+ grotty				    grub-mklayout
+ grops				    grub-mkimage
+ grog				    grub-mkfont
+ groff				    grub-menulst2cfg
+ eqn				    grub-kbdcomp
+ uz				    grub-glue-efi
+ tgz				    grub-fstest
+ mxtar				    grub-file
+ mtools				    grub-editenv
+ mkmanifest			    Xwayland
+ mcomp				    Xorg
+ mcheck				    Xephyr
+ amuFormat.sh			    X
+ ngettext			    gtf
+ gettext.sh			    cvt
+ gettext			    nautilus-autorun-software
+ envsubst			    nautilus
+ pinentry-gnome3		    xxd
+ pinentry-curses		    vim.tiny
+ telnet.netkit			    sudoreplay
+ xinput				    sudoedit
+ update-mime-database		    sudo
+ transmission-gtk		    cvtsudoers
+ rdiffdir			    firefox
+ duplicity			    X11
+ gnome-session-quit		    POST
+ gnome-session-properties	    HEAD
+ gnome-session-inhibit		    GET
+ gnome-session			    apt-add-repository
+ setupcon			    apropos
+ ckbcomp			    apport-collect
+ python3-pasteurize		    arecord
+ python3-futurize		    avahi-publish-service
+ ul				    avahi-publish-address
+ printerbanner			    avahi-browse-domains
+ ncal				    awk
+ lorder				    avahi-resolve-host-name
+ look				    avahi-resolve-address
+ hexdump			    browse
+ column				    captoinfo
+ colrm				    cal
+ colcrt				    bzless
+ col				    bzfgrep
+ calendar			    bzegrep
+ bsd-write			    bzcmp
+ bsd-from			    chardet3
+ whoopsie-preferences		    compose
+ hp-plugin-ubuntu		    ctstat
+ bwrap				    cpp-9
+ kernel-install			    cpp
+ session-migration		    desktop-file-edit
+ fc-validate			    distro-info
+ fc-scan			    domainname
+ fc-query			    dnsdomainname
+ fc-pattern			    driverless
+ fc-match			    editor
+ fc-list			    edit
+ fc-conflist			    ex
+ fc-cat				    foo2zjs-icc2ps
+ fc-cache			    ftp
+ remmina-gnome			    from
+ gnome-session-remmina		    foomatic-rip
+ ttfread			    fwupdagent
+ nano				    futurize
+ remmina-file-wrapper		    geqn
+ remmina			    gjs
+ gvfs-less			    gio-querymodules
+ intel-virtual-output		    ginstall-info
+ vmwarectrl			    glib-compile-schemas
+ strace				    gnome-characters
+ update-desktop-database	    gnome-keyring
+ desktop-file-validate		    gnome-help
+ desktop-file-install		    gnome-text-editor
+ gedit				    gnome-www-browser
+ orca-dm-wrapper		    gpic
+ gamemoderun			    gtbl
+ gamemoded			    gstreamer-codec-install
+ aa-exec			    hd
+ aa-enabled			    i386
+ gnome-logs			    hp-timedate
+ shotwell			    hp-testpage
+ gnome-terminal.wrapper		    hp-setup
+ gnome-terminal.real		    hp-scan
+ gnome-terminal			    hp-query
+ deja-dup			    hp-probe
+ simple-scan			    hp-plugin
+ gnome-calendar			    hp-pkservice
+ linux-update-symlinks		    hp-makeuri
+ linux-check-removal		    hp-logcapture
+ ibus-setup			    hp-levels
+ ibus-daemon			    hp-info
+ ibus				    hp-firmware
+ lesskey			    hp-doctor
+ lessecho			    hp-config_usb_printer
+ less				    hp-colorcal
+ eog				    hp-clean
+ nm-connection-editor		    hp-check
+ nm-applet			    hp-align
+ umax_pp			    infobrowser
+ scanimage			    infotocap
+ sane-find-scanner		    iptables-xml
+ gamma4scanimage		    lastb
+ tracker			    lessfile
+ pkmon				    linux64
+ pkcon				    linux32
+ cheese				    lsmod
+ gnome-language-selector	    lz
+ check-language-support		    mclasserase
+ bluetooth-sendto		    mcd
+ plymouth			    mcat
+ spice-vdagent			    mbadblocks
+ system-config-printer-applet	    mattrib
+ system-config-printer		    lzmore
+ scp-dbus-service		    lzma
+ install-printerdriver		    lzless
+ enchant-lsmod-2		    lzgrep
+ enchant-2			    lzfgrep
+ nautilus-sendto		    lzegrep
+ aptdcon			    lzdiff
+ gnome-system-monitor		    lzcmp
+ lshw				    lzcat
+ lsof				    lz4cat
+ trust				    lz4c
+ p11-kit			    mdeltree
+ migrate-pubring-from-classic-gpg   mdel
+ xdg-settings			    md5sum.textutils
+ xdg-screensaver		    mcopy
+ xdg-open			    minfo
+ xdg-mime			    mformat
+ xdg-icon-resource		    mdu
+ xdg-email			    mdir
+ xdg-desktop-menu		    mkisofs
+ xdg-desktop-icon		    mlabel
+ whoopsie			    mt
+ gjs-console			    mshowfat
+ fprintd-verify			    mshortname
+ fprintd-list			    mren
+ fprintd-enroll			    mrd
+ fprintd-delete			    mpartition
+ wpa_passphrase			    mmove
+ lsinitramfs			    mmount
+ setpci				    mmd
+ lspci				    mtoolstest
+ evince-thumbnailer		    mtype
+ evince-previewer		    mzip
+ evince				    nc
+ yelp				    nawk
+ gnome-disks			    netcat
+ gnome-disk-image-mounter	    nisdomainname
+ file-roller			    nmtui-hostname
+ speaker-test			    nmtui-edit
+ iecset				    nmtui-connect
+ axfer				    on_ac_power
+ aseqnet			    parecord
+ aseqdump			    parec
+ arecordmidi			    paplay
+ aplaymidi			    pamon
+ aplay				    pager
+ amixer				    pasteurize
+ amidi				    pdb3
+ alsaucm			    pftp
+ alsatplg			    pinentry-x11
+ alsamixer			    pinentry
+ alsaloop			    pidof
+ alsabat			    pico
+ aconnect			    ping6
+ libwacom-list-local-devices	    ping4
+ gnome-shell-perf-tool		    pkill
+ gnome-shell-extension-tool	    print
+ gnome-shell			    psfstriptable
+ gnome-extensions		    psfgettable
+ lz4				    psfaddtable
+ unmkinitramfs			    pstree.x11
+ avahi-set-host-name		    python3
+ avahi-resolve			    pygettext3
+ avahi-publish			    pydoc3
+ avahi-browse			    py3versions
+ linux-version			    rcp
+ gdm-screenshot			    rbash
+ gdmflexiserver			    reset
+ gsettings			    rlogin
+ gresource			    rsh
+ gio				    rrsync
+ gdbus				    rnano
+ gapplication			    rview
+ word-list-compress		    rtstat
+ run-with-aspell		    see
+ prezip-bin			    sh
+ prezip				    slogin
+ preunzip			    snice
+ precat				    static-sh
+ aspell-import			    systemd
+ aspell				    systemd-resolve
+ mt-gnu				    systemd-umount
+ cpio				    telnet
+ udisksctl			    traceroute6
+ w.procps			    ubuntu-bug
+ watch				    ua
+ vmstat				    unattended-upgrades
+ uptime				    unlzma
+ top				    unlz4
+ tload				    unxz
+ slabtop			    view
+ skill				    vi
+ pwdx				    w
+ ps				    x-www-browser
+ pmap				    x-window-manager
+ pgrep				    x-terminal-emulator
+ kill				    x-session-manager
+ free				    write
+ unsquashfs			    x86_64-linux-gnu-cpp
+ mksquashfs			    x86_64
+ software-properties-gtk	    x86_64-linux-gnu-pkg-config
+ add-apt-repository		    ypdomainname
+ mutter				    xzfgrep
+ wget				    xzegrep
+ start-pulseaudio-x11		    xzcmp
+ pulseaudio			    xzcat
+ pax11publish			    i686-linux-gnu-pkg-config
+ pasuspender			    fakeroot
+ pa-info			    cc
+ padsp				    c99
+ pactl				    c89
+ pacmd				    c++
+[Parent]: Child 2602 finished with status code 0. Onward!
+Selection #4: /proc [SUCCESS]
+[Parent]: I am waiting for PID 2603 to finish.
+	[Child, PID: 2603]: Executing 'ls -tr' command...
+thread-self  85  2	  504		 591  736   1340  1494	   2213		      kpagecount
+sys	     83  19	  503		 598  840   1355  1500	   2230		      kpagecgroup
+self	     82  185	  sysrq-trigger  600  945   1375  1502	   2263		      key-users
+kcore	     81  184	  scsi		 601  1084  1380  1505	   2297		      keys
+filesystems  80  18	  mtrr		 637  1127  1379  1508	   2309		      ioports
+cmdline      8	 17	  kmsg		 647  1135  1387  1511	   2320		      iomem
+1	     79  163	  kallsyms	 674  1134  1384  1513	   loadavg	      fb
+uptime	     78  161	  irq		 624  1140  1398  1525	   2344		      execdomains
+swaps	     77  160	  fs		 615  1143  1402  1549	   2466		      dynamic_debug
+mounts	     76  16	  bus		 365  1145  1407  1553	   2469		      driver
+net	     75  158	  asound	 364  1149  1413  1597	   zoneinfo	      dma
+cgroups      74  15	  acpi		 363  1152  1423  1618	   vmstat	      diskstats
+99	     73  14	  547		 362  1173  1431  1616	   vmallocinfo	      crypto
+98	     7	 13	  546		 358  1158  1436  1723	   version_signature  consoles
+97	     6	 12	  552		 357  1187  1454  1727	   tty		      buddyinfo
+96	     5	 117	  550		 355  1183  1459  1738	   timer_list	      bootconfig
+95	     4	 112	  555		 349  1195  1475  cpuinfo  sysvipc	      2448
+94	     3	 111	  554		 345  1191  1474  version  softirqs	      2099
+93	     27  11	  558		 342  1204  1473  2080	   slabinfo	      1303
+92	     26  108	  modules	 301  1210  1478  2082	   schedstat	      2528
+91	     25  10	  572		 253  1208  1479  2083	   pressure	      2565
+90	     24  devices  interrupts	 245  1199  1482  stat	   partitions	      2603
+9	     23  225	  575		 678  1236  1483  2118	   pagetypeinfo       2599
+89	     22  meminfo  569		 710  1322  1484  2122	   misc		      2529
+88	     21  252	  588		 713  1327  1487  2154	   locks
+86	     20  mdstat   590		 717  1334  1491  2163	   kpageflags
+[Parent]: Child 2603 finished with status code 0. Onward!
+Selection #5: /usr [SUCCESS]
+[Parent]: I am waiting for PID 2604 to finish.
+	[Child, PID: 2604]: Executing 'ls -tr' command...
+libx32	lib32  local  lib64  games  libexec  src  lib  share  include  sbin  bin
+[Parent]: Child 2604 finished with status code 0. Onward!
+]0;cs3013@cs3013vm: ~/project_1cs3013@cs3013vm:~/project_1$ ./slug 3
+[Slug PID: 2605] Read seed value: 12345
+[Slug PID: 2605] Delay time is 6 seconds. Coin flip: 1.
+[Slug PID: 2605] I'll get the job done. Eventually...
+[Slug PID: 2605] Break time is over! I am running the 'id --group' command.
+1000
+]0;cs3013@cs3013vm: ~/project_1cs3013@cs3013vm:~/project_1$ ./slugrace
+Read seed value: 12345
+[Parent]: I forked off child 2607.
+[Parent]: I forked off child 2608.
+[Parent]: I forked off child 2609.
+[Parent]: I forked off child 2610.
+The race is ongoing. The following children are still racing: 2607 2608 2609 2610 
+	[Child, PID: 2607]: Executing './slug 1' command...
+[Slug PID: 2607] Read seed value: 55555
+[Slug PID: 2607] Delay time is 6 seconds. Coin flip: 0.
+[Slug PID: 2607] I'll get the job done. Eventually...
+	[Child, PID: 2608]: Executing './slug 2' command...
+[Slug PID: 2608] Read seed value: 56789
+	[Child, PID: 2609]: Executing './slug 3' command...
+[Slug PID: 2609] Read seed value: 12345
+	[Child, PID: 2610]: Executing './slug 4' command...
+[Slug PID: 2610] Read seed value: 456
+[Slug PID: 2608] Delay time is 4 seconds. Coin flip: 1.
+[Slug PID: 2608] I'll get the job done. Eventually...
+[Slug PID: 2609] Delay time is 6 seconds. Coin flip: 1.
+[Slug PID: 2609] I'll get the job done. Eventually...
+[Slug PID: 2610] Delay time is 3 seconds. Coin flip: 1.
+[Slug PID: 2610] I'll get the job done. Eventually...
+The race is ongoing. The following children are still racing: 2607 2608 2609 2610 
+The race is ongoing. The following children are still racing: 2607 2608 2609 2610 
+The race is ongoing. The following children are still racing: 2607 2608 2609 2610 
+The race is ongoing. The following children are still racing: 2607 2608 2609 2610 
+The race is ongoing. The following children are still racing: 2607 2608 2609 2610 
+The race is ongoing. The following children are still racing: 2607 2608 2609 2610 
+The race is ongoing. The following children are still racing: 2607 2608 2609 2610 
+The race is ongoing. The following children are still racing: 2607 2608 2609 2610 
+The race is ongoing. The following children are still racing: 2607 2608 2609 2610 
+[Slug PID: 2610] Break time is over! I am running the 'id --group' command.
+1000
+The race is ongoing. The following children are still racing: 2607 2608 2609 2610 
+Child 2610 has crossed the finish line! It took 3.000000 seconds
+The race is ongoing. The following children are still racing: 2607 2608 2609 
+The race is ongoing. The following children are still racing: 2607 2608 2609 
+[Slug PID: 2608] Break time is over! I am running the 'id --group' command.
+1000
+The race is ongoing. The following children are still racing: 2607 2608 2609 
+Child 2608 has crossed the finish line! It took 4.000000 seconds
+The race is ongoing. The following children are still racing: 2607 2609 
+The race is ongoing. The following children are still racing: 2607 2609 
+The race is ongoing. The following children are still racing: 2607 2609 
+The race is ongoing. The following children are still racing: 2607 2609 
+The race is ongoing. The following children are still racing: 2607 2609 
+[Slug PID: 2607] Break time is over! I am running the 'last -i -x' command.
+cs3013   :0           0.0.0.0          Tue Jan 24 19:24   still logged in
+runlevel (to lvl 5)   0.0.0.0          Tue Jan 24 19:24   still running
+reboot   system boot  0.0.0.0          Tue Jan 24 19:23   still running
+cs3013   :0           0.0.0.0          Tue Jan 24 17:48 - crash  (01:35)
+runlevel (to lvl 5)   0.0.0.0          Tue Jan 24 17:48 - 19:24  (01:35)
+reboot   system boot  0.0.0.0          Tue Jan 24 17:48   still running
+shutdown system down  0.0.0.0          Mon Jan 23 23:59 - 17:48  (17:48)
+cs3013   :0           0.0.0.0          Mon Jan 23 23:54 - down   (00:05)
+runlevel (to lvl 5)   0.0.0.0          Mon Jan 23 23:54 - 23:59  (00:05)
+reboot   system boot  0.0.0.0          Mon Jan 23 23:54 - 23:59  (00:05)
+cs3013   :0           0.0.0.0          Mon Jan 23 18:18 - crash  (05:36)
+runlevel (to lvl 5)   0.0.0.0          Mon Jan 23 18:17 - 23:54  (05:36)
+reboot   system boot  0.0.0.0          Mon Jan 23 18:17 - 23:59  (05:42)
+cs3013   :0           0.0.0.0          Fri Jan 20 16:02 - crash (3+02:15)
+runlevel (to lvl 5)   0.0.0.0          Fri Jan 20 16:01 - 18:17 (3+02:15)
+reboot   system boot  0.0.0.0          Fri Jan 20 16:01 - 23:59 (3+07:58)
+cs3013   :0           0.0.0.0          Fri Jan 20 00:59 - crash  (15:02)
+runlevel (to lvl 5)   0.0.0.0          Fri Jan 20 00:58 - 16:01  (15:02)
+reboot   system boot  0.0.0.0          Fri Jan 20 00:58 - 23:59 (3+23:01)
+cs3013   :0           0.0.0.0          Tue Jan 17 12:24 - crash (2+12:34)
+runlevel (to lvl 5)   0.0.0.0          Tue Jan 17 12:23 - 00:58 (2+12:35)
+reboot   system boot  0.0.0.0          Tue Jan 17 12:23 - 23:59 (6+11:36)
+cs3013   :0           0.0.0.0          Mon Jan 16 19:29 - crash  (16:53)
+runlevel (to lvl 5)   0.0.0.0          Mon Jan 16 19:28 - 12:23  (16:55)
+reboot   system boot  0.0.0.0          Mon Jan 16 19:28 - 23:59 (7+04:31)
+cs3013   :0           0.0.0.0          Mon Jan 16 19:26 - crash  (00:01)
+runlevel (to lvl 5)   0.0.0.0          Mon Jan 16 19:26 - 19:28  (00:02)
+reboot   system boot  0.0.0.0          Mon Jan 16 19:26 - 23:59 (7+04:33)
+
+wtmp begins Mon Jan 16 19:26:26 2023
+[Slug PID: 2609] Break time is over! I am running the 'id --group' command.
+1000
+The race is ongoing. The following children are still racing: 2607 2609 
+Child 2607 has crossed the finish line! It took 6.000000 seconds
+Child 2609 has crossed the finish line! It took 6.000000 seconds
+The race is over! It took 6.000000 seconds
+]0;cs3013@cs3013vm: ~/project_1cs3013@cs3013vm:~/project_1$ exit
+exit
+
+Script done on 2023-01-24 19:26:57-05:00 [COMMAND_EXIT_CODE="0"]

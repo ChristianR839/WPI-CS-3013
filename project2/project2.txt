@@ -1,0 +1,595 @@
+Script started on 2023-02-05 20:15:29-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="24"]
+]0;cs3013@cs3013vm: ~/project_2cs3013@cs3013vm:~/project_2$ ./airport
+Random seed value: 12345
+[PLANE 0 | IDLE]: Sleeping for 990µs
+[PLANE 1 | IDLE]: Sleeping for 210µs
+[PLANE 2 | IDLE]: Sleeping for 730µs
+[PLANE 3 | IDLE]: Sleeping for 510µs
+[PLANE 4 | IDLE]: Sleeping for 210µs
+[PLANE 5 | IDLE]: Sleeping for 40µs
+[PLANE 6 | IDLE]: Sleeping for 370µs
+[PLANE 7 | IDLE]: Sleeping for 20µs
+[PLANE 8 | IDLE]: Sleeping for 280µs
+[PLANE 9 | IDLE]: Sleeping for 280µs
+[PLANE 10 | IDLE]: Sleeping for 270µs
+[PLANE 11 | IDLE]: Sleeping for 970µs
+[PLANE 12 | IDLE]: Sleeping for 210µs
+[PLANE 13 | IDLE]: Sleeping for 530µs
+[PLANE 14 | IDLE]: Sleeping for 60µs
+[PLANE 15 | IDLE]: Sleeping for 730µs
+[PLANE 16 | IDLE]: Sleeping for 380µs
+[PLANE 17 | IDLE]: Sleeping for 120µs
+[PLANE 18 | IDLE]: Sleeping for 570µs
+[PLANE 19 | IDLE]: Sleeping for 120µs
+[PLANE 20 | IDLE]: Sleeping for 610µs
+[PLANE 21 | IDLE]: Sleeping for 950µs
+[PLANE 22 | IDLE]: Sleeping for 40µs
+[PLANE 23 | IDLE]: Sleeping for 420µs
+[PLANE 24 | IDLE]: Sleeping for 230µs
+[PLANE 25 | IDLE]: Sleeping for 790µs
+[PLANE 26 | IDLE]: Sleeping for 270µs
+[PLANE 27 | IDLE]: Sleeping for 860µs
+[PLANE 28 | IDLE]: Sleeping for 650µs
+[PLANE 29 | IDLE]: Sleeping for 430µs
+[PLANE 30 | IDLE]: Sleeping for 770µs
+[PLANE 31 | IDLE]: Sleeping for 640µs
+[PLANE 32 | IDLE]: Sleeping for 170µs
+[PLANE 33 | IDLE]: Sleeping for 510µs
+[PLANE 34 | IDLE]: Sleeping for 670µs
+[PLANE 35 | IDLE]: Sleeping for 380µs
+[PLANE 36 | IDLE]: Sleeping for 550µs
+[PLANE 37 | IDLE]: Sleeping for 40µs
+[PLANE 38 | IDLE]: Sleeping for 410µs
+[PLANE 39 | IDLE]: Sleeping for 830µs
+[PLANE 40 | IDLE]: Sleeping for 320µs
+[PLANE 41 | IDLE]: Sleeping for 680µs
+[PLANE 42 | IDLE]: Sleeping for 320µs
+[PLANE 43 | IDLE]: Sleeping for 530µs
+[PLANE 44 | IDLE]: Sleeping for 210µs
+[PLANE 0 | AWAIT_TAKEOFF]: Regions for takeoff: 3, 2
+[PLANE 0 | TAKEOFF]: Taking off...
+[PLANE 0 | TAKEOFF]: Region 3, time 320µs
+[PLANE 1 | AWAIT_TAKEOFF]: Regions for takeoff: 2, 3
+[PLANE 1 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 20 | AWAIT_TAKEOFF]: Regions for takeoff: 5, 3
+[PLANE 20 | TAKEOFF]: Taking off...
+[PLANE 20 | TAKEOFF]: Region 5, time 960µs
+[PLANE 3 | AWAIT_TAKEOFF]: Regions for takeoff: 2, 3
+[PLANE 3 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 5 | AWAIT_TAKEOFF]: Regions for takeoff: 6, 4
+[PLANE 5 | TAKEOFF]: Taking off...
+[PLANE 5 | TAKEOFF]: Region 6, time 330µs
+[PLANE 7 | AWAIT_TAKEOFF]: Regions for takeoff: 6, 4
+[PLANE 7 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 5 | TAKEOFF]: Region 4, time 830µs
+[PLANE 9 | AWAIT_TAKEOFF]: Regions for takeoff: 4, 6
+[PLANE 9 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 5 | FLYING]: Sleeping for 950µs
+[PLANE 11 | AWAIT_TAKEOFF]: Regions for takeoff: 5, 3
+[PLANE 11 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 12 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4
+[PLANE 12 | TAKEOFF]: Taking off...
+[PLANE 12 | TAKEOFF]: Region 1, time 510µs
+[PLANE 15 | AWAIT_TAKEOFF]: Regions for takeoff: 2, 3
+[PLANE 15 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 12 | TAKEOFF]: Region 4, time 650µs
+[PLANE 17 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4
+[PLANE 17 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 18 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4
+[PLANE 18 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 4 | AWAIT_TAKEOFF]: Regions for takeoff: 4, 3
+[PLANE 4 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 12 | FLYING]: Sleeping for 770µs
+[PLANE 21 | AWAIT_TAKEOFF]: Regions for takeoff: 3, 4
+[PLANE 21 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 0 | TAKEOFF]: Region 2, time 920µs
+[PLANE 6 | AWAIT_TAKEOFF]: Regions for takeoff: 3, 4
+[PLANE 6 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 0 | FLYING]: Sleeping for 430µs
+[PLANE 10 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4
+[PLANE 10 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 0 | AWAIT_LANDING]: Regions for landing: 6, 4
+[PLANE 0 | LANDING]: Landing...
+[PLANE 0 | LANDING]: Region 6, time 350µs
+[PLANE 0 | LANDING]: Region 4, time 90µs
+[PLANE 13 | AWAIT_TAKEOFF]: Regions for takeoff: 4, 1
+[PLANE 13 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 0]: Landed successfully
+[PLANE 12 | AWAIT_LANDING]: Regions for landing: 2, 3
+[PLANE 12 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 19 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4
+[PLANE 19 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 20 | TAKEOFF]: Region 3, time 10µs
+[PLANE 8 | AWAIT_TAKEOFF]: Regions for takeoff: 5, 3
+[PLANE 8 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 5 | AWAIT_LANDING]: Regions for landing: 4, 6
+[PLANE 5 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 14 | AWAIT_TAKEOFF]: Regions for takeoff: 3, 2
+[PLANE 14 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 16 | AWAIT_TAKEOFF]: Regions for takeoff: 3, 5
+[PLANE 16 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 22 | AWAIT_TAKEOFF]: Regions for takeoff: 4, 1
+[PLANE 22 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 2 | AWAIT_TAKEOFF]: Regions for takeoff: 6, 4
+[PLANE 2 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 23 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4
+[PLANE 23 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 24 | AWAIT_TAKEOFF]: Regions for takeoff: 3, 5
+[PLANE 24 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 25 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4
+[PLANE 25 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 26 | AWAIT_TAKEOFF]: Regions for takeoff: 5, 3
+[PLANE 26 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 27 | AWAIT_TAKEOFF]: Regions for takeoff: 2, 3
+[PLANE 27 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 28 | AWAIT_TAKEOFF]: Regions for takeoff: 5, 3
+[PLANE 28 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 29 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4
+[PLANE 29 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 30 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4, 6
+[PLANE 30 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 31 | AWAIT_TAKEOFF]: Regions for takeoff: 2, 3, 5
+[PLANE 31 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 32 | AWAIT_TAKEOFF]: Regions for takeoff: 2, 3, 5
+[PLANE 32 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 33 | AWAIT_TAKEOFF]: Regions for takeoff: 6, 4, 1
+[PLANE 33 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 34 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4, 6
+[PLANE 34 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 35 | AWAIT_TAKEOFF]: Regions for takeoff: 2, 3, 5
+[PLANE 35 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 36 | AWAIT_TAKEOFF]: Regions for takeoff: 5, 3, 2
+[PLANE 20 | FLYING]: Sleeping for 730µs
+[PLANE 37 | AWAIT_TAKEOFF]: Regions for takeoff: 6, 4, 1
+[PLANE 37 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 38 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4, 6
+[PLANE 38 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 39 | AWAIT_TAKEOFF]: Regions for takeoff: 5, 3, 2
+[PLANE 39 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 20 | AWAIT_LANDING]: Regions for landing: 2, 3
+[PLANE 20 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 40 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4, 6
+[PLANE 40 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 41 | AWAIT_TAKEOFF]: Regions for takeoff: 6, 4, 1
+[PLANE 41 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 42 | AWAIT_TAKEOFF]: Regions for takeoff: 1, 4, 6
+[PLANE 42 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 43 | AWAIT_TAKEOFF]: Regions for takeoff: 2, 3, 5
+[PLANE 43 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 44 | AWAIT_TAKEOFF]: Regions for takeoff: 6, 4, 1
+[PLANE 44 | AWAIT_TAKEOFF]: Awaiting runway availability
+[PLANE 16 | TAKEOFF]: Taking off...
+[PLANE 16 | TAKEOFF]: Region 3, time 350µs
+[PLANE 16 | TAKEOFF]: Region 5, time 140µs
+[PLANE 16 | FLYING]: Sleeping for 730µs
+[PLANE 16 | AWAIT_LANDING]: Regions for landing: 4, 3
+[PLANE 16 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 24 | TAKEOFF]: Taking off...
+[PLANE 24 | TAKEOFF]: Region 3, time 790µs
+[PLANE 24 | TAKEOFF]: Region 5, time 700µs
+[PLANE 24 | FLYING]: Sleeping for 760µs
+[PLANE 24 | AWAIT_LANDING]: Regions for landing: 6, 4
+[PLANE 24 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 14 | TAKEOFF]: Taking off...
+[PLANE 14 | TAKEOFF]: Region 3, time 500µs
+[PLANE 14 | TAKEOFF]: Region 2, time 640µs
+[PLANE 14 | FLYING]: Sleeping for 10µs
+[PLANE 14 | AWAIT_LANDING]: Regions for landing: 5, 3
+[PLANE 14 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 36 | TAKEOFF]: Taking off...
+[PLANE 36 | TAKEOFF]: Region 5, time 650µs
+[PLANE 36 | TAKEOFF]: Region 3, time 660µs
+[PLANE 36 | TAKEOFF]: Region 2, time 720µs
+[PLANE 36 | FLYING]: Sleeping for 350µs
+[PLANE 36 | AWAIT_LANDING]: Regions for landing: 5, 3, 2
+[PLANE 36 | LANDING]: Landing...
+[PLANE 36 | LANDING]: Region 5, time 480µs
+[PLANE 36 | LANDING]: Region 3, time 510µs
+[PLANE 36 | LANDING]: Region 2, time 490µs
+[PLANE 36]: Landed successfully
+[PLANE 27 | TAKEOFF]: Taking off...
+[PLANE 27 | TAKEOFF]: Region 2, time 640µs
+[PLANE 27 | TAKEOFF]: Region 3, time 940µs
+[PLANE 27 | FLYING]: Sleeping for 970µs
+[PLANE 27 | AWAIT_LANDING]: Regions for landing: 2, 3
+[PLANE 27 | LANDING]: Landing...
+[PLANE 27 | LANDING]: Region 2, time 400µs
+[PLANE 27 | LANDING]: Region 3, time 740µs
+[PLANE 9 | TAKEOFF]: Taking off...
+[PLANE 9 | TAKEOFF]: Region 4, time 910µs
+[PLANE 27]: Landed successfully
+[PLANE 9 | TAKEOFF]: Region 6, time 130µs
+[PLANE 11 | TAKEOFF]: Taking off...
+[PLANE 11 | TAKEOFF]: Region 5, time 310µs
+[PLANE 9 | FLYING]: Sleeping for 360µs
+[PLANE 9 | AWAIT_LANDING]: Regions for landing: 2, 3
+[PLANE 9 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 11 | TAKEOFF]: Region 3, time 590µs
+[PLANE 11 | FLYING]: Sleeping for 810µs
+[PLANE 11 | AWAIT_LANDING]: Regions for landing: 1, 4
+[PLANE 11 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 12 | LANDING]: Landing...
+[PLANE 12 | LANDING]: Region 2, time 310µs
+[PLANE 12 | LANDING]: Region 3, time 540µs
+[PLANE 12]: Landed successfully
+[PLANE 35 | TAKEOFF]: Taking off...
+[PLANE 35 | TAKEOFF]: Region 2, time 710µs
+[PLANE 35 | TAKEOFF]: Region 3, time 310µs
+[PLANE 35 | TAKEOFF]: Region 5, time 590µs
+[PLANE 35 | FLYING]: Sleeping for 360µs
+[PLANE 35 | AWAIT_LANDING]: Regions for landing: 6, 4, 1
+[PLANE 3 | TAKEOFF]: Taking off...
+[PLANE 3 | TAKEOFF]: Region 2, time 30µs
+[PLANE 3 | TAKEOFF]: Region 3, time 830µs
+[PLANE 3 | FLYING]: Sleeping for 720µs
+[PLANE 3 | AWAIT_LANDING]: Regions for landing: 5, 3
+[PLANE 3 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 1 | TAKEOFF]: Taking off...
+[PLANE 1 | TAKEOFF]: Region 2, time 360µs
+[PLANE 1 | TAKEOFF]: Region 3, time 0µs
+[PLANE 1 | FLYING]: Sleeping for 330µs
+[PLANE 1 | AWAIT_LANDING]: Regions for landing: 2, 3
+[PLANE 1 | LANDING]: Landing...
+[PLANE 1 | LANDING]: Region 2, time 250µs
+[PLANE 1 | LANDING]: Region 3, time 10µs
+[PLANE 1]: Landed successfully
+[PLANE 28 | TAKEOFF]: Taking off...
+[PLANE 28 | TAKEOFF]: Region 5, time 680µs
+[PLANE 28 | TAKEOFF]: Region 3, time 380µs
+[PLANE 28 | FLYING]: Sleeping for 330µs
+[PLANE 28 | AWAIT_LANDING]: Regions for landing: 5, 3
+[PLANE 28 | LANDING]: Landing...
+[PLANE 28 | LANDING]: Region 5, time 960µs
+[PLANE 28 | LANDING]: Region 3, time 150µs
+[PLANE 28]: Landed successfully
+[PLANE 20 | LANDING]: Landing...
+[PLANE 20 | LANDING]: Region 2, time 250µs
+[PLANE 20 | LANDING]: Region 3, time 340µs
+[PLANE 20]: Landed successfully
+[PLANE 5 | LANDING]: Landing...
+[PLANE 5 | LANDING]: Region 4, time 850µs
+[PLANE 5 | LANDING]: Region 6, time 90µs
+[PLANE 5]: Landed successfully
+[PLANE 14 | LANDING]: Landing...
+[PLANE 14 | LANDING]: Region 5, time 400µs
+[PLANE 14 | LANDING]: Region 3, time 80µs
+[PLANE 14]: Landed successfully
+[PLANE 17 | TAKEOFF]: Taking off...
+[PLANE 17 | TAKEOFF]: Region 1, time 400µs
+[PLANE 17 | TAKEOFF]: Region 4, time 990µs
+[PLANE 17 | FLYING]: Sleeping for 450µs
+[PLANE 17 | AWAIT_LANDING]: Regions for landing: 5, 3
+[PLANE 17 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 25 | TAKEOFF]: Taking off...
+[PLANE 25 | TAKEOFF]: Region 1, time 210µs
+[PLANE 25 | TAKEOFF]: Region 4, time 450µs
+[PLANE 25 | FLYING]: Sleeping for 660µs
+[PLANE 25 | AWAIT_LANDING]: Regions for landing: 4, 1
+[PLANE 25 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 4 | TAKEOFF]: Taking off...
+[PLANE 4 | TAKEOFF]: Region 4, time 330µs
+[PLANE 4 | TAKEOFF]: Region 3, time 510µs
+[PLANE 4 | FLYING]: Sleeping for 360µs
+[PLANE 4 | AWAIT_LANDING]: Regions for landing: 3, 4
+[PLANE 4 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 8 | TAKEOFF]: Taking off...
+[PLANE 8 | TAKEOFF]: Region 5, time 610µs
+[PLANE 8 | TAKEOFF]: Region 3, time 960µs
+[PLANE 8 | FLYING]: Sleeping for 520µs
+[PLANE 8 | AWAIT_LANDING]: Regions for landing: 4, 1
+[PLANE 8 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 26 | TAKEOFF]: Taking off...
+[PLANE 26 | TAKEOFF]: Region 5, time 420µs
+[PLANE 26 | TAKEOFF]: Region 3, time 680µs
+[PLANE 26 | FLYING]: Sleeping for 730µs
+[PLANE 26 | AWAIT_LANDING]: Regions for landing: 1, 4
+[PLANE 26 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 17 | LANDING]: Landing...
+[PLANE 17 | LANDING]: Region 5, time 820µs
+[PLANE 17 | LANDING]: Region 3, time 690µs
+[PLANE 17]: Landed successfully
+[PLANE 22 | TAKEOFF]: Taking off...
+[PLANE 22 | TAKEOFF]: Region 4, time 140µs
+[PLANE 22 | TAKEOFF]: Region 1, time 750µs
+[PLANE 22 | FLYING]: Sleeping for 680µs
+[PLANE 22 | AWAIT_LANDING]: Regions for landing: 4, 6
+[PLANE 22 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 6 | TAKEOFF]: Taking off...
+[PLANE 6 | TAKEOFF]: Region 3, time 840µs
+[PLANE 6 | TAKEOFF]: Region 4, time 150µs
+[PLANE 43 | TAKEOFF]: Taking off...
+[PLANE 43 | TAKEOFF]: Region 2, time 170µs
+[PLANE 6 | FLYING]: Sleeping for 290µs
+[PLANE 6 | AWAIT_LANDING]: Regions for landing: 6, 4
+[PLANE 6 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 43 | TAKEOFF]: Region 3, time 620µs
+[PLANE 43 | TAKEOFF]: Region 5, time 700µs
+[PLANE 43 | FLYING]: Sleeping for 550µs
+[PLANE 43 | AWAIT_LANDING]: Regions for landing: 1, 4, 6
+[PLANE 43 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 32 | TAKEOFF]: Taking off...
+[PLANE 32 | TAKEOFF]: Region 2, time 360µs
+[PLANE 32 | TAKEOFF]: Region 3, time 470µs
+[PLANE 32 | TAKEOFF]: Region 5, time 210µs
+[PLANE 15 | TAKEOFF]: Taking off...
+[PLANE 15 | TAKEOFF]: Region 2, time 820µs
+[PLANE 32 | FLYING]: Sleeping for 0µs
+[PLANE 32 | AWAIT_LANDING]: Regions for landing: 6, 4, 1
+[PLANE 32 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 15 | TAKEOFF]: Region 3, time 200µs
+[PLANE 15 | FLYING]: Sleeping for 900µs
+[PLANE 15 | AWAIT_LANDING]: Regions for landing: 5, 3
+[PLANE 15 | LANDING]: Landing...
+[PLANE 15 | LANDING]: Region 5, time 250µs
+[PLANE 15 | LANDING]: Region 3, time 260µs
+[PLANE 15]: Landed successfully
+[PLANE 31 | TAKEOFF]: Taking off...
+[PLANE 31 | TAKEOFF]: Region 2, time 930µs
+[PLANE 31 | TAKEOFF]: Region 3, time 0µs
+[PLANE 31 | TAKEOFF]: Region 5, time 950µs
+[PLANE 31 | FLYING]: Sleeping for 560µs
+[PLANE 31 | AWAIT_LANDING]: Regions for landing: 5, 3, 2
+[PLANE 31 | LANDING]: Landing...
+[PLANE 31 | LANDING]: Region 5, time 410µs
+[PLANE 31 | LANDING]: Region 3, time 840µs
+[PLANE 31 | LANDING]: Region 2, time 150µs
+[PLANE 31]: Landed successfully
+[PLANE 9 | LANDING]: Landing...
+[PLANE 9 | LANDING]: Region 2, time 220µs
+[PLANE 9 | LANDING]: Region 3, time 30µs
+[PLANE 9]: Landed successfully
+[PLANE 39 | TAKEOFF]: Taking off...
+[PLANE 39 | TAKEOFF]: Region 5, time 860µs
+[PLANE 39 | TAKEOFF]: Region 3, time 850µs
+[PLANE 39 | TAKEOFF]: Region 2, time 730µs
+[PLANE 39 | FLYING]: Sleeping for 940µs
+[PLANE 39 | AWAIT_LANDING]: Regions for landing: 2, 3, 5
+[PLANE 39 | LANDING]: Landing...
+[PLANE 39 | LANDING]: Region 2, time 470µs
+[PLANE 39 | LANDING]: Region 3, time 700µs
+[PLANE 39 | LANDING]: Region 5, time 840µs
+[PLANE 39]: Landed successfully
+[PLANE 26 | LANDING]: Landing...
+[PLANE 26 | LANDING]: Region 1, time 820µs
+[PLANE 26 | LANDING]: Region 4, time 220µs
+[PLANE 26]: Landed successfully
+[PLANE 13 | TAKEOFF]: Taking off...
+[PLANE 13 | TAKEOFF]: Region 4, time 530µs
+[PLANE 13 | TAKEOFF]: Region 1, time 590µs
+[PLANE 13 | FLYING]: Sleeping for 430µs
+[PLANE 18 | TAKEOFF]: Taking off...
+[PLANE 18 | TAKEOFF]: Region 1, time 950µs
+[PLANE 13 | AWAIT_LANDING]: Regions for landing: 4, 1
+[PLANE 13 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 18 | TAKEOFF]: Region 4, time 430µs
+[PLANE 18 | FLYING]: Sleeping for 660µs
+[PLANE 4 | LANDING]: Landing...
+[PLANE 4 | LANDING]: Region 3, time 720µs
+[PLANE 18 | AWAIT_LANDING]: Regions for landing: 2, 3
+[PLANE 18 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 4 | LANDING]: Region 4, time 940µs
+[PLANE 4]: Landed successfully
+[PLANE 3 | LANDING]: Landing...
+[PLANE 3 | LANDING]: Region 5, time 880µs
+[PLANE 3 | LANDING]: Region 3, time 160µs
+[PLANE 3]: Landed successfully
+[PLANE 18 | LANDING]: Landing...
+[PLANE 18 | LANDING]: Region 2, time 780µs
+[PLANE 18 | LANDING]: Region 3, time 550µs
+[PLANE 18]: Landed successfully
+[PLANE 25 | LANDING]: Landing...
+[PLANE 25 | LANDING]: Region 4, time 380µs
+[PLANE 25 | LANDING]: Region 1, time 810µs
+[PLANE 25]: Landed successfully
+[PLANE 7 | TAKEOFF]: Taking off...
+[PLANE 7 | TAKEOFF]: Region 6, time 930µs
+[PLANE 7 | TAKEOFF]: Region 4, time 750µs
+[PLANE 7 | FLYING]: Sleeping for 60µs
+[PLANE 7 | AWAIT_LANDING]: Regions for landing: 4, 6
+[PLANE 7 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 21 | TAKEOFF]: Taking off...
+[PLANE 21 | TAKEOFF]: Region 3, time 20µs
+[PLANE 21 | TAKEOFF]: Region 4, time 860µs
+[PLANE 21 | FLYING]: Sleeping for 520µs
+[PLANE 21 | AWAIT_LANDING]: Regions for landing: 5, 3
+[PLANE 21 | LANDING]: Landing...
+[PLANE 21 | LANDING]: Region 5, time 750µs
+[PLANE 21 | LANDING]: Region 3, time 430µs
+[PLANE 21]: Landed successfully
+[PLANE 6 | LANDING]: Landing...
+[PLANE 6 | LANDING]: Region 6, time 790µs
+[PLANE 6 | LANDING]: Region 4, time 700µs
+[PLANE 6]: Landed successfully
+[PLANE 19 | TAKEOFF]: Taking off...
+[PLANE 19 | TAKEOFF]: Region 1, time 390µs
+[PLANE 19 | TAKEOFF]: Region 4, time 480µs
+[PLANE 19 | FLYING]: Sleeping for 910µs
+[PLANE 19 | AWAIT_LANDING]: Regions for landing: 6, 4
+[PLANE 19 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 16 | LANDING]: Landing...
+[PLANE 16 | LANDING]: Region 4, time 580µs
+[PLANE 16 | LANDING]: Region 3, time 360µs
+[PLANE 16]: Landed successfully
+[PLANE 23 | TAKEOFF]: Taking off...
+[PLANE 23 | TAKEOFF]: Region 1, time 330µs
+[PLANE 23 | TAKEOFF]: Region 4, time 330µs
+[PLANE 23 | FLYING]: Sleeping for 300µs
+[PLANE 23 | AWAIT_LANDING]: Regions for landing: 2, 3
+[PLANE 23 | LANDING]: Landing...
+[PLANE 23 | LANDING]: Region 2, time 600µs
+[PLANE 23 | LANDING]: Region 3, time 280µs
+[PLANE 23]: Landed successfully
+[PLANE 8 | LANDING]: Landing...
+[PLANE 8 | LANDING]: Region 4, time 870µs
+[PLANE 8 | LANDING]: Region 1, time 940µs
+[PLANE 8]: Landed successfully
+[PLANE 38 | TAKEOFF]: Taking off...
+[PLANE 38 | TAKEOFF]: Region 1, time 730µs
+[PLANE 38 | TAKEOFF]: Region 4, time 150µs
+[PLANE 38 | TAKEOFF]: Region 6, time 0µs
+[PLANE 38 | FLYING]: Sleeping for 610µs
+[PLANE 38 | AWAIT_LANDING]: Regions for landing: 5, 3, 2
+[PLANE 38 | LANDING]: Landing...
+[PLANE 38 | LANDING]: Region 5, time 400µs
+[PLANE 38 | LANDING]: Region 3, time 350µs
+[PLANE 38 | LANDING]: Region 2, time 20µs
+[PLANE 38]: Landed successfully
+[PLANE 24 | LANDING]: Landing...
+[PLANE 24 | LANDING]: Region 6, time 610µs
+[PLANE 24 | LANDING]: Region 4, time 620µs
+[PLANE 24]: Landed successfully
+[PLANE 10 | TAKEOFF]: Taking off...
+[PLANE 10 | TAKEOFF]: Region 1, time 970µs
+[PLANE 10 | TAKEOFF]: Region 4, time 920µs
+[PLANE 10 | FLYING]: Sleeping for 320µs
+[PLANE 11 | LANDING]: Landing...
+[PLANE 10 | AWAIT_LANDING]: Regions for landing: 3, 2
+[PLANE 10 | LANDING]: Landing...
+[PLANE 10 | LANDING]: Region 3, time 0µs
+[PLANE 11 | LANDING]: Region 1, time 830µs
+[PLANE 10 | LANDING]: Region 2, time 330µs
+[PLANE 10]: Landed successfully
+[PLANE 11 | LANDING]: Region 4, time 880µs
+[PLANE 11]: Landed successfully
+[PLANE 32 | LANDING]: Landing...
+[PLANE 32 | LANDING]: Region 6, time 160µs
+[PLANE 32 | LANDING]: Region 4, time 660µs
+[PLANE 32 | LANDING]: Region 1, time 700µs
+[PLANE 19 | LANDING]: Landing...
+[PLANE 19 | LANDING]: Region 6, time 890µs
+[PLANE 32]: Landed successfully
+[PLANE 19 | LANDING]: Region 4, time 670µs
+[PLANE 19]: Landed successfully
+[PLANE 13 | LANDING]: Landing...
+[PLANE 13 | LANDING]: Region 4, time 300µs
+[PLANE 13 | LANDING]: Region 1, time 690µs
+[PLANE 13]: Landed successfully
+[PLANE 7 | LANDING]: Landing...
+[PLANE 7 | LANDING]: Region 4, time 70µs
+[PLANE 7 | LANDING]: Region 6, time 760µs
+[PLANE 7]: Landed successfully
+[PLANE 2 | TAKEOFF]: Taking off...
+[PLANE 2 | TAKEOFF]: Region 6, time 950µs
+[PLANE 2 | TAKEOFF]: Region 4, time 220µs
+[PLANE 2 | FLYING]: Sleeping for 770µs
+[PLANE 2 | AWAIT_LANDING]: Regions for landing: 3, 5
+[PLANE 2 | LANDING]: Landing...
+[PLANE 2 | LANDING]: Region 3, time 710µs
+[PLANE 2 | LANDING]: Region 5, time 160µs
+[PLANE 2]: Landed successfully
+[PLANE 37 | TAKEOFF]: Taking off...
+[PLANE 37 | TAKEOFF]: Region 6, time 460µs
+[PLANE 37 | TAKEOFF]: Region 4, time 250µs
+[PLANE 37 | TAKEOFF]: Region 1, time 290µs
+[PLANE 37 | FLYING]: Sleeping for 80µs
+[PLANE 44 | TAKEOFF]: Taking off...
+[PLANE 44 | TAKEOFF]: Region 6, time 230µs
+[PLANE 37 | AWAIT_LANDING]: Regions for landing: 5, 3, 2
+[PLANE 37 | LANDING]: Landing...
+[PLANE 37 | LANDING]: Region 5, time 110µs
+[PLANE 37 | LANDING]: Region 3, time 140µs
+[PLANE 44 | TAKEOFF]: Region 4, time 160µs
+[PLANE 37 | LANDING]: Region 2, time 630µs
+[PLANE 44 | TAKEOFF]: Region 1, time 980µs
+[PLANE 37]: Landed successfully
+[PLANE 44 | FLYING]: Sleeping for 490µs
+[PLANE 44 | AWAIT_LANDING]: Regions for landing: 5, 3, 2
+[PLANE 44 | LANDING]: Landing...
+[PLANE 44 | LANDING]: Region 5, time 680µs
+[PLANE 44 | LANDING]: Region 3, time 210µs
+[PLANE 44 | LANDING]: Region 2, time 80µs
+[PLANE 44]: Landed successfully
+[PLANE 41 | TAKEOFF]: Taking off...
+[PLANE 41 | TAKEOFF]: Region 6, time 350µs
+[PLANE 41 | TAKEOFF]: Region 4, time 40µs
+[PLANE 41 | TAKEOFF]: Region 1, time 290µs
+[PLANE 41 | FLYING]: Sleeping for 420µs
+[PLANE 41 | AWAIT_LANDING]: Regions for landing: 1, 4, 6
+[PLANE 35 | LANDING]: Landing...
+[PLANE 35 | LANDING]: Region 6, time 160µs
+[PLANE 35 | LANDING]: Region 4, time 90µs
+[PLANE 35 | LANDING]: Region 1, time 320µs
+[PLANE 35]: Landed successfully
+[PLANE 42 | TAKEOFF]: Taking off...
+[PLANE 42 | TAKEOFF]: Region 1, time 920µs
+[PLANE 42 | TAKEOFF]: Region 4, time 210µs
+[PLANE 42 | TAKEOFF]: Region 6, time 560µs
+[PLANE 42 | FLYING]: Sleeping for 610µs
+[PLANE 42 | AWAIT_LANDING]: Regions for landing: 2, 3, 5
+[PLANE 42 | LANDING]: Landing...
+[PLANE 42 | LANDING]: Region 2, time 280µs
+[PLANE 42 | LANDING]: Region 3, time 560µs
+[PLANE 42 | LANDING]: Region 5, time 640µs
+[PLANE 42]: Landed successfully
+[PLANE 29 | TAKEOFF]: Taking off...
+[PLANE 29 | TAKEOFF]: Region 1, time 200µs
+[PLANE 29 | TAKEOFF]: Region 4, time 200µs
+[PLANE 29 | FLYING]: Sleeping for 790µs
+[PLANE 29 | AWAIT_LANDING]: Regions for landing: 6, 4
+[PLANE 29 | AWAIT_LANDING]: Awaiting runway availability
+[PLANE 41 | LANDING]: Landing...
+[PLANE 41 | LANDING]: Region 1, time 290µs
+[PLANE 41 | LANDING]: Region 4, time 900µs
+[PLANE 41 | LANDING]: Region 6, time 350µs
+[PLANE 41]: Landed successfully
+[PLANE 30 | TAKEOFF]: Taking off...
+[PLANE 30 | TAKEOFF]: Region 1, time 950µs
+[PLANE 30 | TAKEOFF]: Region 4, time 580µs
+[PLANE 30 | TAKEOFF]: Region 6, time 80µs
+[PLANE 30 | FLYING]: Sleeping for 550µs
+[PLANE 30 | AWAIT_LANDING]: Regions for landing: 1, 4, 6
+[PLANE 22 | LANDING]: Landing...
+[PLANE 22 | LANDING]: Region 4, time 850µs
+[PLANE 22 | LANDING]: Region 6, time 880µs
+[PLANE 22]: Landed successfully
+[PLANE 34 | TAKEOFF]: Taking off...
+[PLANE 34 | TAKEOFF]: Region 1, time 970µs
+[PLANE 34 | TAKEOFF]: Region 4, time 610µs
+[PLANE 34 | TAKEOFF]: Region 6, time 560µs
+[PLANE 34 | FLYING]: Sleeping for 60µs
+[PLANE 34 | AWAIT_LANDING]: Regions for landing: 2, 3, 5
+[PLANE 34 | LANDING]: Landing...
+[PLANE 34 | LANDING]: Region 2, time 500µs
+[PLANE 34 | LANDING]: Region 3, time 620µs
+[PLANE 34 | LANDING]: Region 5, time 990µs
+[PLANE 40 | TAKEOFF]: Taking off...
+[PLANE 40 | TAKEOFF]: Region 1, time 830µs
+[PLANE 34]: Landed successfully
+[PLANE 40 | TAKEOFF]: Region 4, time 40µs
+[PLANE 40 | TAKEOFF]: Region 6, time 790µs
+[PLANE 40 | FLYING]: Sleeping for 920µs
+[PLANE 40 | AWAIT_LANDING]: Regions for landing: 6, 4, 1
+[PLANE 43 | LANDING]: Landing...
+[PLANE 43 | LANDING]: Region 1, time 520µs
+[PLANE 43 | LANDING]: Region 4, time 400µs
+[PLANE 43 | LANDING]: Region 6, time 950µs
+[PLANE 43]: Landed successfully
+[PLANE 29 | LANDING]: Landing...
+[PLANE 29 | LANDING]: Region 6, time 810µs
+[PLANE 29 | LANDING]: Region 4, time 300µs
+[PLANE 29]: Landed successfully
+[PLANE 33 | TAKEOFF]: Taking off...
+[PLANE 33 | TAKEOFF]: Region 6, time 820µs
+[PLANE 33 | TAKEOFF]: Region 4, time 280µs
+[PLANE 33 | TAKEOFF]: Region 1, time 400µs
+[PLANE 33 | FLYING]: Sleeping for 430µs
+[PLANE 33 | AWAIT_LANDING]: Regions for landing: 2, 3, 5
+[PLANE 33 | LANDING]: Landing...
+[PLANE 33 | LANDING]: Region 2, time 70µs
+[PLANE 30 | LANDING]: Landing...
+[PLANE 30 | LANDING]: Region 1, time 210µs
+[PLANE 33 | LANDING]: Region 3, time 250µs
+[PLANE 30 | LANDING]: Region 4, time 560µs
+[PLANE 33 | LANDING]: Region 5, time 340µs
+[PLANE 30 | LANDING]: Region 6, time 820µs
+[PLANE 33]: Landed successfully
+[PLANE 30]: Landed successfully
+[PLANE 40 | LANDING]: Landing...
+[PLANE 40 | LANDING]: Region 6, time 630µs
+[PLANE 40 | LANDING]: Region 4, time 800µs
+[PLANE 40 | LANDING]: Region 1, time 830µs
+[PLANE 40]: Landed successfully
+]0;cs3013@cs3013vm: ~/project_2cs3013@cs3013vm:~/project_2$ exit
+exit
+
+Script done on 2023-02-05 20:16:00-05:00 [COMMAND_EXIT_CODE="45"]
